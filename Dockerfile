@@ -14,6 +14,6 @@ RUN npm install
 
 COPY --chown=node:node . .
 
-EXPOSE 8585
+EXPOSE 8586
 
 CMD ["/bin/bash", "-c", "npm run docs:dev --host 0.0.0.0"]

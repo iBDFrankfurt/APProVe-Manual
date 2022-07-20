@@ -4,7 +4,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   base: "/manual/",
-  port: 8585,
+  port: 8586,
   locales: {
     "/": {
       lang: "de-AT",
