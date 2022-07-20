@@ -15,7 +15,7 @@ export const zh = sidebar({
     {
       text: "文章",
       icon: "note",
-      prefix: "posts/",
+      prefix: "updates/",
       children: [
         {
           text: "文章 1-4",

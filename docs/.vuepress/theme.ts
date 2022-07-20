@@ -4,17 +4,23 @@ import * as sidebar from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
-
+  themeColor: {
+    red: "#b3062c",
+    green: "#737c45",
+    orange: "#c96215",
+    grey: "#4f4c48",
+    white: "#e4e3dd",
+  },
   author: {
-    name: "Timo Schneider",
-    url: "https://mrhope.site",
+    name: "interdisziplinäre Biomaterial- und Datenbank Frankfurt (iBDF)",
+    url: "https://www.uct-frankfurt.de/ibdf.html",
   },
 
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "gitlab.proskive.de/proskive/uct-manual-service",
 
   docsDir: "demo/src",
 
@@ -22,22 +28,22 @@ export default hopeTheme({
 
   blog: {
     medias: {
-      Email: "timo.schneider@kgu.de",
+      Email: "mailto:uct-ibdf@kgu.de",
     },
   },
 
   locales: {
     "/": {
       // navbar
-      navbar: navbar.en,
+      navbar: navbar.de,
 
       // sidebar
-      sidebar: sidebar.en,
-      footer: "Default footer",
+      sidebar: sidebar.de,
+      footer: "",
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "iBDF",
         intro: "/intro.html",
       },
     },

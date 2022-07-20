@@ -2,26 +2,36 @@
 home: true
 layout: Blog
 icon: home
-title: Blog Home
+title: APProVe
 heroImage: /logo.svg
 heroText: APProVe
-tagline: You can put your slogan here
-heroFullScreen: true
+tagline: Das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF
+heroFullScreen: false
 projects:
   - icon: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+    name: APProVe Productive
+    desc: APProve running at the iBDF in production
+    link: https://approve.ibdf-frankfurt.de
+
+  - icon: project
+    name: APProVe Demosystem
+    desc: APProve running at the iBDF as a test system
+    link: https://approved.ibdf-frankfurt.de
 
   - icon: link
-    name: link name
+    name: UCT-Biobank
     desc: link detailed description
-    link: https://link.address
+    link: https://www.uct-frankfurt.de/uct-biobank.html
+
+  - icon: link
+    name: iBDF
+    desc: link detailed description
+    link: https://www.uct-frankfurt.de/ibdf.html
 
   - icon: book
-    name: book name
+    name: iBDF-Wiki
     desc: Detailed description of the book
-    link: https://link.to.your.book
+    link: https://wiki.ibdf-frankfurt.de/wiki/Hauptseite
 
   - icon: article
     name: article name
@@ -38,11 +48,5 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: customize your footer text
+footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 ---
-
-This is a blog home page demo.
-
-To use this layout, you should set both `layout: Blog` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://vuepress-theme-hope.github.io/v2/guide/blog/home/).

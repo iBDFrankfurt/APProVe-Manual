@@ -1,17 +1,20 @@
 ---
 home: true
 icon: home
-title: Project home
+title: APProVe Manual
 heroImage: /logo.svg
-heroText: Project name
-tagline: You can place the description of the project here.
+heroText: APProVe Manual
+tagline: Handbuch für APProVe - das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF
 actions:
   - text: How to Use 💡
-    link: /guide/
+    link: /introduction/
     type: primary
 
   - text: Blog homepage 🏠
     link: /
+
+  - text: Changelogs
+    link: /updates/
 
 features:
   - title: Markdown Enhance
@@ -100,7 +103,7 @@ features:
     link: https://vuepress-theme-hope.github.io/v2/guide/feature/
 
 copyright: false
-footer: MIT Licensed | Copyright © 2019-present Mr.Hope
+footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 ---
 
 This is an example of a project homepage. You can place your main content here.
