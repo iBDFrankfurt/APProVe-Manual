@@ -18,4 +18,4 @@ COPY --chown=node:node . .
 
 EXPOSE 8586
 
-CMD ["/bin/bash", "-c", "npm run docs:dev-host"]
+CMD ["/bin/bash", "-c", "npm run docs:dev"]

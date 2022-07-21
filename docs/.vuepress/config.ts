@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
-import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
   base: "/manual/",
