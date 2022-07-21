@@ -25,7 +25,7 @@ Die wichtigeste Funktion von APProVe ist die Einreichung von Forschungsprojekten
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/createNewProjectButtons.png" class="float-right" alt="Neues Projekt erstellen Button">
+               <img src="/img/navigation/createNewProjectButtons.png" class="float-right" alt="Neues Projekt erstellen Button">
             </label>
           </div>
         </figure>
@@ -33,7 +33,9 @@ Die wichtigeste Funktion von APProVe ist die Einreichung von Forschungsprojekten
 </div>
 <br/>
 
+
 ## Prozess der Projekteinreichung
+
 Nachdem Sie auf einen der beiden Buttons geklickt haben, starten Sie den Prozess der Projekteinreichung. Dabei führt ein ```Wizard``` Sie durch die einzelnen Schritte die benötigt werden, um ein Projekt erfolgreich einzureichen. Nachfolgende werden die einzelnen Schritte genauer erläutert.
 Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt:
         <br/>
@@ -45,16 +47,14 @@ Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt
             <li>Ethik & Finanzierung</li>
             <li>Nutzungsbedingungen</li>
         </ol>
-        <p>
-        In jedem Schritt werden Sie dazu aufgefordert Pflichtfelder auszufüllen. Der genaue Inhalt der einzelnen Abschnitte wird weiter unten im Detail erläutert. Falls einige Pflichtfelder noch nicht ausgefüllt wurden, erkennen Sie das daran, dass ein Schritt im linken Menü <span class="red">rot</span> markiert ist. Wenn ein Schritt <span class="green">grün</span> markiert ist, bedeutet dies, dass alle benötigten Informationen in diesem Schritt eingetragen wurden.
-<p/>
+        <p>In jedem Schritt werden Sie dazu aufgefordert Pflichtfelder auszufüllen. Der genaue Inhalt der einzelnen Abschnitte wird weiter unten im Detail erläutert. Falls einige Pflichtfelder noch nicht ausgefüllt wurden, erkennen Sie das daran, dass ein Schritt im linken Menü <span class="red">rot</span> markiert ist. Wenn ein Schritt <span class="green">grün</span> markiert ist, bedeutet dies, dass alle benötigten Informationen in diesem Schritt eingetragen wurden.</p>
 <br/>
 <div class="row">
     <div class="col-lg-8">
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/createProjectWizard1.png" class="float-left" alt="Wizard der Projekteinreichung">
+               <img src="/img/navigation/createProjectWizard1.png" class="float-left" alt="Wizard der Projekteinreichung">
             </label>
           </div>
         </figure>
@@ -65,7 +65,6 @@ Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt
 </p>
     <br/>
     </div>
-</div>
 <div class="row">
     <div class="col-lg-4">
     <br/>
@@ -77,7 +76,7 @@ Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/createProjectWizardFinished.png" class="float-right" alt="Wizard der Projekteinreichung">
+               <img src="/img/navigation/createProjectWizardFinished.png" class="float-right" alt="Wizard der Projekteinreichung">
             </label>
           </div>
         </figure>
@@ -109,7 +108,7 @@ Tragen Sie bitte eine der beiden Auswahlmöglichkeiten ein, da diese zur Abrechn
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/requestTypeSearchProject.png" class="float-left small-image" alt="Antragsart">
+               <img src="/img/navigation/requestTypeSearchProject.png" class="float-left small-image" alt="Antragsart">
             </label>
           </div>
         </figure>
@@ -168,7 +167,7 @@ Wenn sie Bioproben für Ihr Projekt benötigen, können Sie über den Button ```
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/addSample.png" class="float-right" alt="Antragsart">
+               <img src="/img/navigation/addSample.png" class="float-right" alt="Antragsart">
             </label>
           </div>
         </figure>

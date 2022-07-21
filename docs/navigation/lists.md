@@ -1,4 +1,5 @@
 # Listen
+
 APProVe stellt, die in der Datenbank gespeicherten Informationen, als Listen dar.
 
 ::: tip Inhaltsangabe
@@ -31,7 +32,7 @@ oder als Kontaktperson genannt ist. Für weitere Informationen zu den Projektkac
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/myProjectsTile.png" class="float-right" alt="ProSkive-Bio Übersicht über meine Projekte">
+               <img src="/img/navigation/myProjectsTile.png" class="float-right" alt="ProSkive-Bio Übersicht über meine Projekte">
             </label>
           </div>
         </figure>
@@ -52,13 +53,12 @@ Sie haben die Möglichkeit, die Ansicht der Projektlisten anzupassen. Sie könne
         <p>
             Eine Projektliste zeigt pro Seite bis zu 25 Projekte an. Dies minimiert die Ladezeiten zur Anzeige der Projekte. Möchten Sie weitere Projekte einsehen, klicken Sie am Ende der Liste auf die entsprechende Seitenzahl. In den Einstellungen haben Sie zudem die Möglichkeit, die maximale Anzahl an angezeigten Projekten selbst zu definieren. Bitte beachten Sie, dass Ihre persönlichen Einstellung zurzeit <strong>nicht</strong> gespeichert werden und beim Verlassen der Seite verloren gehen. Dies gilt auch für die Anzeige der Spalten, die in der Liste auftauchen sollen!
         </p>
-        
     </div>
         <div class="col-lg-8">
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/projectListSettings.png" class="float-right" alt="APProVe Einstellungen der Projektliste">
+               <img src="/img/navigation/projectListSettings.png" class="float-right" alt="APProVe Einstellungen der Projektliste">
             </label>
           </div>
         </figure>
@@ -79,7 +79,7 @@ Wenn Sie Teil des Projektmanagements der Biobank sind haben Sie zudem die Mögli
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/projectListSettingsAdmin.png" class="float-left" alt="APProVe Einstellungen der Projektliste">
+               <img src="/img/navigation/projectListSettingsAdmin.png" class="float-left" alt="APProVe Einstellungen der Projektliste">
             </label>
           </div>
         </figure>
@@ -128,7 +128,7 @@ APProVe beinhaltet nicht nur Projektlisten, sondern auch Verwaltungslisten in de
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="./img/navigation/elementList.png" class="float-left" alt="ProSkive-Bio Einstellungen der Projektliste">
+               <img src="/img/navigation/elementList.png" class="float-left" alt="ProSkive-Bio Einstellungen der Projektliste">
             </label>
           </div>
         </figure>
