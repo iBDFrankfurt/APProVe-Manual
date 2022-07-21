@@ -4,7 +4,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
   base: "/manual/",
-  port: 8586,
+  host: "0.0.0.0",
   locales: {
     "/": {
       lang: "de-AT",
