@@ -7,7 +7,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev-host": "vuepress dev docs --host 0.0.0.0",
+    "docs:dev-host": "vuepress dev docs --host 0.0.0.0"
   },
   "author": "Timo Schneider",
   "license": "ISC",
