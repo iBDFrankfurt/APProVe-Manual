@@ -6,6 +6,7 @@ import {createDevServerConfig} from "@vuepress/bundler-webpack/lib/dev/createDev
 export default defineUserConfig({
   base: "/",
   host: "0.0.0.0",
+  port: 443,
   locales: {
     "/": {
       lang: "de-AT",
@@ -23,6 +24,7 @@ export default defineUserConfig({
     configureWebpack: (config, isServer) => {
       config.devServer = {
         host: "0.0.0.0",
+        port: 8586,
         hot: false
       };
     },
