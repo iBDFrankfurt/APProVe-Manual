@@ -7,7 +7,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev-host": "vuepress dev docs --host 0.0.0.0"
+    "docs:dev-host": "vuepress dev docs --host 0.0.0.0",
+    "docs:serve": "npm run serve"
   },
   "author": "Timo Schneider",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "webpack": "^5.73.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "serve": "^14.0.1"
   }
 }

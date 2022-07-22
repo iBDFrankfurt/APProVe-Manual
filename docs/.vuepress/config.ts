@@ -3,7 +3,7 @@ import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
-  base: "/manual/",
+  base: "/",
   host: "0.0.0.0",
   locales: {
     "/": {
@@ -20,7 +20,10 @@ export default defineUserConfig({
   theme,
   bundler: webpackBundler({
     postcss: {},
-    vue: {},
+    vue: {
+      isServerBuild: true,
+      hotReload: false,
+    },
   }),
   plugins: [
     searchPlugin({

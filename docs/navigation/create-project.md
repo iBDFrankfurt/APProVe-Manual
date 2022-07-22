@@ -10,7 +10,6 @@ Die wichtigeste Funktion von APProVe ist die Einreichung von Forschungsprojekten
 <br/>
 
 ## Wo finde ich die Projekteinreichung?
-
 <div class="row">
     <div class="col-lg-4">
     <p>
