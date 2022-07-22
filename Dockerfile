@@ -1,16 +1,21 @@
-# Dockerfile
+FROM node:16.15.1-alpine
 
-FROM node:16 as build
+RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
-WORKDIR /usr/src/app
+RUN apk add --no-cache bash
 
-COPY package.json package-lock.json ./
+WORKDIR /home/node/app
+
+COPY package*.json ./
+
+RUN chown -R node:node package*.json
+
+USER node
+
 RUN npm install
 
-COPY . .
-RUN npm run docs:build
-
-FROM nginx:alpine
-COPY --from=build /usr/src/app/docs/.vuepress/dist /usr/share/nginx/html
+COPY --chown=node:node . .
 
 EXPOSE 8586
+
+CMD ["/bin/bash", "-c", "npm run docs:dev"]
