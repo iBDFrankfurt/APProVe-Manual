@@ -25,13 +25,13 @@ export default defineUserConfig({
       config.devServer = {
         host: "0.0.0.0",
         port: 8586,
-        hot: false
+        hot: true
       };
     },
     postcss: {},
     vue: {
       isServerBuild: true,
-      hotReload: false,
+      hotReload: true,
     },
   }),
   plugins: [

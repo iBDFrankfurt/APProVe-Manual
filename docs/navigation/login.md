@@ -24,6 +24,10 @@ copyright: false
 toc: false
 ---
 
+Erfahren Sie hier, wie Sie sich bei APProVe anmelden können.
+
+<!-- more -->
+
 # Anmeldung
 
 ::: tip Inhaltsangabe
@@ -32,6 +36,8 @@ toc: false
 
 ## Anmelde-Button auf der Startseite
 Um APProVe nutzen zu können, benötigen Sie zunächst eine Freischaltung Ihres Nutzeraccounts. Wie Sie Ihre eigenen Login-Daten erhalten erfahren Sie hier: [Registrierung](registration.md)
+
+
 <br/>
 <br/>
 <div class="row">
@@ -73,4 +79,4 @@ Um APProVe nutzen zu können, benötigen Sie zunächst eine Freischaltung Ihres 
 <br/>
 <br/>
 
-Nach einem erfolgreichen Login gelangen Sie zur Übersichtsseite von APProVe: [Übersichtsseite](navigation.md).
+Nach einem erfolgreichen Login gelangen Sie zur Übersichtsseite von APProVe: [Übersichtsseite](dashboard.md).

@@ -24,6 +24,7 @@ footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankf
 # You can customize copyright content
 copyright: false
 toc: false
+article: false
 ---
 
 ## Introduction

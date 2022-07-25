@@ -24,6 +24,10 @@ copyright: false
 toc: false
 ---
 
+Erfahren Sie hier mehr über die APProVe Softwarearchitektur.
+
+<!-- more -->
+
 # Architektur von APProVe
 Die Software APProVe wurde als microservicebasierte Architektur umgesetzt, die nachfolgend genauer erläutert wird.
 

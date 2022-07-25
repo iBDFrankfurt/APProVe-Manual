@@ -6,8 +6,8 @@ export const de = navbar([
   {
     text: "Changelogs",
     icon: "note",
-    prefix: "updates/",
-    link: "updates/",
+    prefix: "/updates/",
+    link: "/updates",
     children: ["2-5-1", "2-5-0"],
   },
 ]);

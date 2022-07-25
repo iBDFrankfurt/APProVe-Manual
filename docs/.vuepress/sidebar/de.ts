@@ -4,7 +4,6 @@ export const de = sidebar({
   "/": [
     "",
     "home",
-    "slide",
     {
       icon: "any",
       text: "Einführung",
@@ -17,7 +16,14 @@ export const de = sidebar({
       text: "Navigation",
       prefix: "navigation/",
       link: "navigation/",
-      children: ["registration", "login"],
+      children: ["registration", "login", "dashboard", "view-project", "create-project", "edit-project", "lists"],
+    },
+    {
+      text: "Verwaltung",
+      icon: "config",
+      prefix: "management/",
+      link: "management/",
+      children: [],
     },
     {
       text: "Changelogs",

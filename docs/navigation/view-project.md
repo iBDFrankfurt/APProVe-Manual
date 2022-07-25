@@ -1,10 +1,43 @@
+---
+# This is the title of the article
+title: Projektansicht
+# This control sidebar order
+order: 4
+# Set author
+author: Timo Schneider
+# Set writing time
+date: 2022-07-20
+# A page can have multiple categories
+category:
+- Project
+# A page can have multiple tags
+tag:
+- View
+# this page is sticky in article list
+sticky: false
+# this page will appear in starred articles
+star: false
+# You can customize footer content
+footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
+# You can customize copyright content
+copyright: false
+toc: false
+---
+
+Alles zur Projektansicht.
+
+<!-- more -->
+
+
 # Projektansicht
 Die Projektansicht bietet Ihnen eine übersichtliche Zusammenfassung Ihres Projekts und den Statusverlauf während des Bewilligungsprozesses und der Projektumsetzung. Zudem können Sie in der Projektansicht über ein weiteres Tab die Kommentarfunktion öffnen und mit Mitarbeitern der Biobank in Kontakt treten, um Fragen zu Ihrem Vorhaben zu klären. Biobankmitarbeiter haben in dieser Ansicht zusätzlich die Möglichkeit projektspezifische Aufgaben zu hinterlegen und diese auch anderen Personen zuzuweisen.
 Die Ansicht ist nur für berechtigte Personen einsehbar! Dies sind alle Personen die bei der Projekteinreichung als Projektbeteiligte (egal in welcher Funktion) eingetragen wurden, sowie der/die Ersteller/in des Projekts und ausgewählte Mitarbeiter der Biobank.
 
 <br/>
 
+::: tip Inhaltsangabe
 [[toc]]
+:::
 
 Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektübersicht die Angaben in verschiedene Abschnitte unterteilt
 
@@ -187,7 +220,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
 
 ## ToDo
 ::: warning Achtung
-Die Ansicht für ToDos ist nur für das Projektmanagement der Biobank einsehbar! ie Projektteilnehmer werden diese **nicht** einsehen können!
+Die Ansicht für ToDos ist bisher nur für das Projektmanagement der Biobank einsehbar! Die Projektteilnehmer werden diese **nicht** einsehen können!
 :::
 Sind Sie Teil des Projektmanagements haben Sie zusätzlich zum Kommentare-Tab noch einen ToDo-Tab. Dies erlaubt Ihnen Aufgaben für ein Projekt vorzumerken, oder eine Erinnerung zu erstellen.
 <br/>

@@ -24,6 +24,10 @@ copyright: false
 toc: false
 ---
 
+Erfahren Sie hier, wie Sie einen Account bei APProVe beantragen können.
+
+<!-- more -->
+
 # Registrierung
 
 ::: tip Inhaltsangabe

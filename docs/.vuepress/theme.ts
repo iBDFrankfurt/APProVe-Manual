@@ -3,7 +3,6 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
   themeColor: {
     red: "#b3062c",
     green: "#737c45",

@@ -1,4 +1,5 @@
 ---
+article: false
 title: Updates
 index: false
 icon: creative
@@ -13,3 +14,4 @@ category:
 
 - [2.5.0](2-5-0.md)
 
+<!-- more -->

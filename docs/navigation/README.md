@@ -23,17 +23,21 @@ star: false
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 # You can customize copyright content
 copyright: false
+article: false
 ---
+
+Erfahren Sie mehr darüber, wie Sie in APProVe navigieren können.
+
+<!-- more -->
 
 ## Navigation
 
 
 - [Registrierung](registration.md)
 - [Anmeldung](login.md)
-- [Übersichtsseite](overview.md)
-- [Listen](lists.md)
+- [Übersichtsseite](dashboard.md)
 - [Projekteinreichung](create-project.md)
 - [Projektansicht](view-project.md)
 - [Projektbearbeitung](edit-project.md)
-- [Informationsseiten](information-sites.md)
+- [Listen](lists.md)
 

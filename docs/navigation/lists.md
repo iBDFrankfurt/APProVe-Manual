@@ -1,3 +1,33 @@
+---
+# This is the title of the article
+title: Projektlisten
+# This control sidebar order
+order: 7
+# Set author
+author: Timo Schneider
+# Set writing time
+date: 2022-07-25
+# A page can have multiple categories
+category:
+- Project
+# A page can have multiple tags
+tag:
+- List
+# this page is sticky in article list
+sticky: false
+# this page will appear in starred articles
+star: false
+# You can customize footer content
+footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
+# You can customize copyright content
+copyright: false
+toc: false
+---
+
+Alles, was Sie über die Projektlisten wissen sollten.
+
+<!-- more -->
+
 # Listen
 
 APProVe stellt, die in der Datenbank gespeicherten Informationen, als Listen dar.
@@ -14,7 +44,7 @@ oder als Kontaktperson genannt ist. Für weitere Informationen zu den Projektkac
 <div class="row">
     <div class="col-lg-4">
         <p>
-            Wenn Sie eine Projektkachel angeklickt haben, öffnet sich ein neues Fenster in dem Ihre Projektliste angezeigt wird, wie das nebenstehende Bild veranschaulicht.
+            Wenn Sie eine Projektkachel angeklickt haben, öffnet sich ein neues Fenster, in dem Ihre Projektliste angezeigt wird, wie das nebenstehende Bild veranschaulicht.
         </p>
         <br/>
         <p>
@@ -48,10 +78,8 @@ Sie haben die Möglichkeit, die Ansicht der Projektlisten anzupassen. Sie könne
         <p>
             Nachdem Sie auf Einstellungen geklickt haben, öffnet sich ein ein kleineres Fenster, wie das nebenstehende Bild verdeutlicht. Dort können Sie gewünschte Spalten hinzufügen oder nicht gewünschte Spalten aus der Tabellenübersicht entfernen. 
         </p>
-        <br/>
-        <br/>
         <p>
-            Eine Projektliste zeigt pro Seite bis zu 25 Projekte an. Dies minimiert die Ladezeiten zur Anzeige der Projekte. Möchten Sie weitere Projekte einsehen, klicken Sie am Ende der Liste auf die entsprechende Seitenzahl. In den Einstellungen haben Sie zudem die Möglichkeit, die maximale Anzahl an angezeigten Projekten selbst zu definieren. Bitte beachten Sie, dass Ihre persönlichen Einstellung zurzeit <strong>nicht</strong> gespeichert werden und beim Verlassen der Seite verloren gehen. Dies gilt auch für die Anzeige der Spalten, die in der Liste auftauchen sollen!
+            Eine Projektliste zeigt standardmäßig pro Seite bis zu 25 Projekte an. Dies minimiert die Ladezeiten zur Anzeige der Projekte. Möchten Sie weitere Projekte einsehen, klicken Sie am Ende der Liste auf die entsprechende Seitenzahl. In den Einstellungen haben Sie zudem die Möglichkeit, die maximale Anzahl an angezeigten Projekten selbst zu definieren. Bitte beachten Sie, dass Ihre persönliche Einstellung zurzeit <strong>nicht</strong> gespeichert werden und beim Verlassen der Seite verloren gehen. Dies gilt auch für die Anzeige der Spalten, die in der Liste auftauchen sollen!
         </p>
     </div>
         <div class="col-lg-8">
@@ -118,23 +146,5 @@ Wenn Sie Teil des Projektmanagements der Biobank sind haben Sie zudem die Mögli
 <p>
     Weitere Informationen zum Import und Export von Projekten finden Sie unter <a href="project-export.html">Projektexport</a>, sowie unter <a href="project-import.md.html">Projektimport</a>.
 </p>
-<br/>
-<br/>
-
-## Verwaltungslisten
-APProVe beinhaltet nicht nur Projektlisten, sondern auch Verwaltungslisten in denen beispielsweise die Materialarten oder Probencontainer angezeigt werden können. An der grundlegenden Navigation, Anzeige und Möglichkeiten der Einstellungen der Listen gibt es keine Unterschiede zu den oben beschriebenen Projektlisten.
-<div class="row">
-    <div class="col-lg-8">
-        <figure>
-          <div class="container">
-            <label for="Entity">
-               <img src="/img/navigation/elementList.png" class="float-left" alt="ProSkive-Bio Einstellungen der Projektliste">
-            </label>
-          </div>
-        </figure>
-    </div>
-     <div class="col-lg-4">
-     </div>
-</div>
 <br/>
 <br/>

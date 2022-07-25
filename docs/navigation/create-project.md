@@ -1,13 +1,40 @@
+---
+# This is the title of the article
+title: Projekterstellung
+# This control sidebar order
+order: 5
+# Set author
+author: Timo Schneider
+# Set writing time
+date: 2022-07-25
+# A page can have multiple categories
+category:
+- Project
+# A page can have multiple tags
+tag:
+- Create
+# this page is sticky in article list
+sticky: false
+# this page will appear in starred articles
+star: false
+# You can customize footer content
+footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
+# You can customize copyright content
+copyright: false
+toc: false
+---
+
+Alles, was Sie über die Erstellung eines Projekts wissen müssen.
+
+<!-- more -->
+
 # Projekteinreichung
 
-Die wichtigeste Funktion von APProVe ist die Einreichung von Forschungsprojekten in der lokalen Biobank. 
+Die zentrale Funktion von APProVe ist die Einreichung von Forschungsprojekten in der lokalen Biobank. 
 
 ::: tip Inhaltsangabe
 [[toc]]
 :::
-
-<br/>
-<br/>
 
 ## Wo finde ich die Projekteinreichung?
 <div class="row">
@@ -153,14 +180,12 @@ Wenn Sie für Ihr Projekt klinische Daten benötigen, können Sie diese in diese
 #### Bioproben
 Wenn sie Bioproben für Ihr Projekt benötigen, können Sie über den Button ```Bioproben hinzufügen```. die gewünschten Proben definieren und ihrem Projekt hinzufügen. Nachdem sie auf den Button geklickt haben öffnet sich ein neues kleineres Fenster, in dem Sie Ihre Eingaben machen können.
 <br/>
-<br/>
 <div class="row">
     <div class="col-lg-4">
     <br/>
     <p>
         Zunächst geben Sie bitte in einem Freitextfeld an aus welcher Entität Proben benötigt werden (Bspw.: AML, NSCLC, ...). Mit Hilfe der folgenden Auswahl- und Eingabefelder können Sie die Proben näher beschreiben. Unter der Probenkategorie können Sie zwischen <code>Gewebeproben</code> oder <code>Flüssigproben</code> oder <code>Sonstigen Proben</code> unterscheiden. In Abhängigkeit der Auswahl der Probenkategorie passen sich die Wahlmöglichkeiten der Probenarten an. Die Probencontainer wiederum ändern sich in Abhängigkeit der Probenart. 
     </p>
-    <br/>
     </div>
     <div class="col-lg-8">
         <figure>
