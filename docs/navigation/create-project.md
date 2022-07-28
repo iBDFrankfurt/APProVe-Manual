@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Projekterstellung
+title: Projekteinreichung
 # This control sidebar order
 order: 5
 # Set author
@@ -51,7 +51,7 @@ Die zentrale Funktion von APProVe ist die Einreichung von Forschungsprojekten in
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/createNewProjectButtons.png" class="float-right" alt="Neues Projekt erstellen Button">
+                <img :src="$withBase('/img/navigation/createNewProjectButtons.png')" alt="VuePress Logo">
             </label>
           </div>
         </figure>

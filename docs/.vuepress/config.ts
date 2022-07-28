@@ -4,7 +4,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { webpackBundler } from '@vuepress/bundler-webpack'
 import {createDevServerConfig} from "@vuepress/bundler-webpack/lib/dev/createDevServerConfig";
 export default defineUserConfig({
-  base: "/",
+  base: "/manual/",
   host: "0.0.0.0",
   port: 443,
   locales: {
