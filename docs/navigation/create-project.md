@@ -80,7 +80,7 @@ Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/createProjectWizard1.png" class="float-left" alt="Wizard der Projekteinreichung">
+               <img :src="$withBase('/img/navigation/createProjectWizard1.png')" class="float-left" alt="Wizard der Projekteinreichung">
             </label>
           </div>
         </figure>
@@ -102,7 +102,7 @@ Während des Einreichungsprozesses werden folgenden Projektinformationen abfragt
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/createProjectWizardFinished.png" class="float-right" alt="Wizard der Projekteinreichung">
+               <img :src="$withBase('/img/navigation/createProjectWizardFinished.png')" class="float-right" alt="Wizard der Projekteinreichung">
             </label>
           </div>
         </figure>
@@ -134,7 +134,7 @@ Tragen Sie bitte eine der beiden Auswahlmöglichkeiten ein, da diese zur Abrechn
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/requestTypeSearchProject.png" class="float-left small-image" alt="Antragsart">
+               <img :src="$withBase('/img/navigation/requestTypeSearchProject.png')" class="float-left small-image" alt="Antragsart">
             </label>
           </div>
         </figure>
@@ -191,7 +191,7 @@ Wenn sie Bioproben für Ihr Projekt benötigen, können Sie über den Button ```
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/addSample.png" class="float-right" alt="Antragsart">
+               <img :src="$withBase('/img/navigation/addSample.png')" class="float-right" alt="Antragsart">
             </label>
           </div>
         </figure>

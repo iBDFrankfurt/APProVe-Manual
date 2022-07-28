@@ -36,7 +36,7 @@ Bei APProVe handelt es sich um eine microservicebasierte Softwarel√∂sung, die f√
 <figure>
   <div class="container">
     <label for="Container">
-    <img src="/img/architecture/Project_management_APProVe_en.png" alt="APProVe Prozess">
+    <img :src="$withBase('/img/architecture/Project_management_APProVe_en.png')" alt="APProVe Prozess">
     </label>
       <figcaption>APProVe Prozess</figcaption>
   </div>

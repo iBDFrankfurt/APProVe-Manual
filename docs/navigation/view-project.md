@@ -61,7 +61,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/generalDataView.png" class="float-right" alt="Neues Projekt erstellen Button">
+               <img :src="$withBase('/img/navigation/generalDataView.png')" class="float-right" alt="Neues Projekt erstellen Button">
             </label>
           </div>
         </figure>
@@ -78,7 +78,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/participantsProjectView.png" class="float-left" alt="Projektansicht Beteiligung">
+               <img :src="$withBase('/img/navigation/participantsProjectView.png')" class="float-left" alt="Projektansicht Beteiligung">
             </label>
           </div>
         </figure>
@@ -105,7 +105,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/cooperationProjectView.png" class="float-right" alt="Projektansicht Kooperation">
+               <img :src="$withBase('/img/navigation/cooperationProjectView.png')" class="float-right" alt="Projektansicht Kooperation">
             </label>
           </div>
         </figure>
@@ -122,7 +122,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/sampleProjectView.png" class="float-left" alt="Projektansicht Bioproben">
+               <img :src="$withBase('/img/navigation/sampleProjectView.png')" class="float-left" alt="Projektansicht Bioproben">
             </label>
           </div>
         </figure>
@@ -147,7 +147,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/projectViewNavPills.png" class="float-right" alt="Projektübersicht Navigationsleiste">
+               <img :src="$withBase('/img/navigation/projectViewNavPills.png')" class="float-right" alt="Projektübersicht Navigationsleiste">
             </label>
           </div>
         </figure>
@@ -161,7 +161,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/commentOverview.png" class="float-left" alt="Kommentarübersicht">
+               <img :src="$withBase('/img/navigation/commentOverview.png')" class="float-left" alt="Kommentarübersicht">
             </label>
           </div>
         </figure>
@@ -185,7 +185,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/writeNewComment.png" class="float-left" alt="Neuer Kommentar erstellt">
+               <img :src="$withBase('/img/navigation/writeNewComment.png')" class="float-left" alt="Neuer Kommentar erstellt">
             </label>
           </div>
         </figure>
@@ -203,7 +203,7 @@ Wie in der [Projekteinreichung](create-project.md) sind auch in der Projektüber
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/createdNewComment.png" class="float-left" alt="Neuer Kommentar erstellen">
+               <img :src="$withBase('/img/navigation/createdNewComment.png')" class="float-left" alt="Neuer Kommentar erstellen">
             </label>
           </div>
         </figure>
@@ -235,7 +235,7 @@ Sind Sie Teil des Projektmanagements haben Sie zusätzlich zum Kommentare-Tab no
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/todoOverview.png" class="float-right" alt="Neues ToDo erstellen">
+               <img :src="$withBase('/img/navigation/todoOverview.png')" class="float-right" alt="Neues ToDo erstellen">
             </label>
           </div>
         </figure>

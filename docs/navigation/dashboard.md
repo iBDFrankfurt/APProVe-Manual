@@ -52,7 +52,7 @@ Als Wissenschaftler erhalten Sie eine detailliertere Übersicht, um schnell auf 
         <figure>
            <div class="container">
              <label for="Entity">
-                <img src="/img/navigation/overviewUser.png" class="float-right" alt="ProSkive-Bio Übersichtsseite des Nutzers">
+                <img :src="$withBase('/img/navigation/overviewUser.png')" class="float-right" alt="ProSkive-Bio Übersichtsseite des Nutzers">
              </label>
                <figcaption>APProVe Übersichtsseite des Nutzers</figcaption>
            </div>
@@ -90,7 +90,7 @@ Als Projektmanagement haben Sie einige Kacheln mehr. Darüber hinaus erhalten Si
         <figure>
            <div class="container">
              <label for="Entity">
-                <img src="/img/navigation/overviewAdmin.png" class="float-right" alt="APProVe Übersichtsseite des PM">
+                <img :src="$withBase('/img/navigation/overviewAdmin.png')" class="float-right" alt="APProVe Übersichtsseite des PM">
              </label>
                <figcaption>APProVe Übersichtsseite des PM</figcaption>
            </div>

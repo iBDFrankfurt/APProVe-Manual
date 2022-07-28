@@ -62,7 +62,7 @@ oder als Kontaktperson genannt ist. Für weitere Informationen zu den Projektkac
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/myProjectsTile.png" class="float-right" alt="ProSkive-Bio Übersicht über meine Projekte">
+               <img :src="$withBase('/img/navigation/myProjectsTile.png')" class="float-right" alt="ProSkive-Bio Übersicht über meine Projekte">
             </label>
           </div>
         </figure>
@@ -86,7 +86,7 @@ Sie haben die Möglichkeit, die Ansicht der Projektlisten anzupassen. Sie könne
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/projectListSettings.png" class="float-right" alt="APProVe Einstellungen der Projektliste">
+               <img :src="$withBase('/img/navigation/projectListSettings.png')" class="float-right" alt="APProVe Einstellungen der Projektliste">
             </label>
           </div>
         </figure>
@@ -107,7 +107,7 @@ Wenn Sie Teil des Projektmanagements der Biobank sind haben Sie zudem die Mögli
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/projectListSettingsAdmin.png" class="float-left" alt="APProVe Einstellungen der Projektliste">
+               <img :src="$withBase('/img/navigation/projectListSettingsAdmin.png')" class="float-left" alt="APProVe Einstellungen der Projektliste">
             </label>
           </div>
         </figure>

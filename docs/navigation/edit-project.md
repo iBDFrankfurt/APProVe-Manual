@@ -40,7 +40,7 @@ Als Nutzer haben Sie nicht nur die Möglichkeit ein neues Projekt zu [erstellen]
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/myProjectsWithEdit.png" class="float-right" alt="APProVe Übersicht über meine Projekte mit editierbarem Projekt">
+               <img :src="$withBase('/img/navigation/myProjectsWithEdit.png')" class="float-right" alt="APProVe Übersicht über meine Projekte mit editierbarem Projekt">
             </label>
           </div>
         </figure>
@@ -60,7 +60,7 @@ Als Nutzer haben Sie nicht nur die Möglichkeit ein neues Projekt zu [erstellen]
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/projectEdit.png" class="float-left" alt="APProVe Übersicht über meine Projekte mit editierbarem Projekt">
+               <img :src="$withBase('/img/navigation/projectEdit.png')" class="float-left" alt="APProVe Übersicht über meine Projekte mit editierbarem Projekt">
             </label>
           </div>
         </figure>

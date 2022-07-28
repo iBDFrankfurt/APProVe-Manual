@@ -49,7 +49,7 @@ Um APProVe nutzen zu können, benötigen Sie zunächst eine Freischaltung Ihres 
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/startPage.png" class="float-right" alt="APProVe Startseite">
+               <img :src="$withBase('/img/navigation/startPage.png')" class="float-right" alt="APProVe Startseite">
             </label>
           </div>
         </figure>
@@ -65,7 +65,7 @@ Um APProVe nutzen zu können, benötigen Sie zunächst eine Freischaltung Ihres 
         <figure>
           <div class="container">
             <label for="Entity">
-               <img src="/img/navigation/login.png" class="float-left" alt="APProVe Login Seite">
+               <img :src="$withBase('/img/navigation/login.png')" class="float-left" alt="APProVe Login Seite">
             </label>
           </div>
         </figure>

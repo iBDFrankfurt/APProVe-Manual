@@ -61,7 +61,7 @@ Sie können nach einer Person, die das Projekt leiten soll, suchen. Bei der Such
 <figure>
   <div class="container">
     <label for="Container">
-    <img src="/img/projectmanagement/search-projectleader.png" alt="Änderung der Projektleitung">
+    <img :src="$withBase('/img/projectmanagement/search-projectleader.png')" alt="Änderung der Projektleitung">
     </label>
       <figcaption>Änderung der Projektleitung</figcaption>
   </div>

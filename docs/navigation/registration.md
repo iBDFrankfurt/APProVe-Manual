@@ -46,7 +46,7 @@ Dort finden Sie den Button ```Zugang beantragen```, worüber Sie direkt eine E-M
 <figure>
   <div class="container">
     <label for="Entity">
-       <img src="/img/navigation/startPage.png" class="center-image" alt="APProVe Startseite">
+       <img :src="$withBase('/img/navigation/startPage.png')" class="center-image" alt="APProVe Startseite">
     </label>
     <figcaption>APProVe Startseite</figcaption>
   </div>

@@ -42,7 +42,7 @@ Die folgende Abbildung zeigt APProVe als Beispiel einer microservicebasierten Ar
 <figure>
   <div class="container">
     <label for="Container">
-    <img src="/img/architecture/APProVe-Micro-Architektur.png" alt="APProVe Architektur">
+    <img :src="$withBase('/img/architecture/APProVe-Micro-Architektur.png')" alt="APProVe Architektur">
     </label>
       <figcaption>APProVe Architektur</figcaption>
   </div>
@@ -64,7 +64,7 @@ Um den Begriff eines Software-Container abschließend zu definieren, kann eine M
 <figure>
   <div class="container">
     <label for="Container">
-    <img src="/img/architecture/container-vs-vm2.png" alt="Eine Gegenüberstellung von Containern und virtuellen Maschinen">
+    <img :src="$withBase('/img/architecture/container-vs-vm2.png')" alt="Eine Gegenüberstellung von Containern und virtuellen Maschinen">
     </label>
       <figcaption>Eine Gegenüberstellung von Containern und virtuellen Maschinen</figcaption>
   </div>
@@ -78,7 +78,7 @@ Eine dieser Techniken ist das sogenannte "Continous Deployment", bei dem der Cod
 <figure>
   <div class="container">
     <label for="DevOps">
-      <img src="/img/architecture/devops_cycle.png" alt="Zeigt den DevOps Zyklus">
+      <img :src="$withBase('/img/architecture/devops_cycle.png')" alt="Zeigt den DevOps Zyklus">
     </label>
     <figcaption>Zeigt den DevOps Zyklus</figcaption>
   </div>
@@ -92,7 +92,7 @@ APProVe wurde anhand folgender Technologien konzeptioniert und entwickelt.
 <figure>
   <div class="container">
     <label for="Technologien">
-      <img src="/img/architecture/DevOps-Technology.png" alt="Verwendete Technologien">
+      <img :src="$withBase('/img/architecture/DevOps-Technology.png')" alt="Verwendete Technologien">
     </label>
     <figcaption>Verwendete Technologien von APProVe</figcaption>
   </div>
@@ -104,7 +104,7 @@ APProVe wurde anhand folgender Technologien konzeptioniert und entwickelt.
 <figure>
   <div class="container">
     <label for="Entity">
-       <img src="/img/architecture/Datenbank-Entity-Relation.jpg" alt="Entity-Relationship Diagramm von APProVe">
+       <img :src="$withBase('/img/architecture/Datenbank-Entity-Relation.jpg')" alt="Entity-Relationship Diagramm von APProVe">
     </label>
       <figcaption>Entity-Relationship Diagramm von APProVe</figcaption>
   </div>
