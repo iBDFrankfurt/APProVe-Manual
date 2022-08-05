@@ -12,6 +12,13 @@ export const de = sidebar({
       children: ["introduction", "architecture"],
     },
     {
+      text: "Features",
+      icon: "note",
+      prefix: "features/",
+      link: "features/",
+      children: ["reassign"],
+    },
+    {
       icon: "guide",
       text: "Navigation",
       prefix: "navigation/",
