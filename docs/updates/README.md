@@ -9,9 +9,13 @@ category:
 
 ## Changelogs
 
-- [2.6.0](2-5-3.md) <Badge type="info" text="UPCOMMING" vertical="top" />
+- [2.6.2](2-5-6.md)  <Badge type="danger" text="NEW" vertical="top" />
+- 
+- [2.6.1](2-5-6.md) 
+- 
+- [2.6.0](2-5-6.md) 
 
-- [2.5.3](2-5-3.md) <Badge type="danger" text="NEW" vertical="top" />
+- [2.5.3](2-5-3.md)
 
 - [2.5.2](2-5-2.md)
 
