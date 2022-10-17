@@ -82,6 +82,8 @@ Als Projektmanagement haben Sie einige Kacheln mehr. Darüber hinaus erhalten Si
             <li><code>Verwaltung</code></li>
             <li><code>Einstellungen</code></li>
             <li><code>Neues Projekt erstellen</code></li>
+            <li><code>Personenverwaltung</code></li>
+            <li><code>Mir zugewiesene ToDos</code></li>
          </ol>
 <br/>
 <br/>
@@ -104,5 +106,6 @@ Als Projektmanagement haben Sie einige Kacheln mehr. Darüber hinaus erhalten Si
      <p>Über die Kachel <code>Alle Projekte</code> kommen Sie zu einer Übersichtstabelle in der alle Projekte im System angezeigt werden. </p>
     <p>Wenn Sie ein neues Projekt einreichen wollen, klicken Sie auf <code>Neues Projekt erstellen</code>. Details zur Projekteingabe und -einreichung finden Sie <a href="create-project.html">hier</a>. </p>
     <p>Die Verwaltung-Kachel bringt Sie schnell in die administrative Ansicht für APProVe, dort können Sie grundlegende Änderungen am System vornehmen. </p>
-   <p>Weitere Informationen zu den verschiedenen Kacheln in APProVe und deren Verwaltung finden Sie <a href="administration/tiles.html">hier</a>.</p>
+   <p>Weitere Informationen zu den verschiedenen Kacheln in APProVe und deren Verwaltung finden Sie <a href="/administration/tiles.html">hier</a>.</p>
+   <p>Über die Kachel <code>Mir zugewiesene ToDos</code> erhalten Sie eine Übersicht, über die Ihnen zugewiesenen ToDos. Näheres dazu finden Sie unter <a href="/features/todos.html">hier</a>.</p>
 

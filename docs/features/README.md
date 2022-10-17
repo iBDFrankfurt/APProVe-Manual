@@ -13,5 +13,7 @@ Check the Features of APProVe!
 
 ## Features
 
+- [Todos](todos.md)
 - [Projekte umhängen](reassign.md)
+- [Projektkacheln](tiles.md)
 

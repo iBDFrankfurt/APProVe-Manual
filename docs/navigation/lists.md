@@ -37,8 +37,8 @@ APProVe stellt, die in der Datenbank gespeicherten Informationen, als Listen dar
 :::
 
 ## Projektlisten
-In den sogenannten [Projektkacheln](administration/tiles.md) befinden sich gruppierte Projekte, die als eine Liste dargestellt werden. So zeigt beispielsweise die Projektkachel ```Meine Projekte``` alle Projekte an, die der/die Forschende selbst erstellt hat, leitet, an denen er/sie beteiligt 
-oder als Kontaktperson genannt ist. Für weitere Informationen zu den Projektkacheln lesen Sie [hier](administration/tiles.md) weiter.
+In den sogenannten [Projektkacheln](../management/tiles.md) befinden sich gruppierte Projekte, die als eine Liste dargestellt werden. So zeigt beispielsweise die Projektkachel ```Meine Projekte``` alle Projekte an, die der/die Forschende selbst erstellt hat, leitet, an denen er/sie beteiligt 
+oder als Kontaktperson genannt ist. Für weitere Informationen zu den Projektkacheln lesen Sie [hier](../management/tiles.md) weiter.
 <br/>
 <br/>
 <div class="row">

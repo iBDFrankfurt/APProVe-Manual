@@ -8,7 +8,7 @@ order: 0
 # Set author
 author: Timo Schneider
 # Set writing time
-date: 2022-08-5
+date: 2022-08-05
 # A page can have multiple categories
 category:
 - Features

@@ -46,7 +46,7 @@ Die verlinkten Elemente sind Listen, die Sie selbst als Projektmanager veränder
   <li><b>Allgemeine Informationen</b>
     <ol>
       <li>Titel und Laufzeit</li>
-      <li>Projektleitung</li>
+      <li><a href="persons.md">Projektleitung</a></li>
       <li><a href="mainFocus.md">Schwerpunkt</a> </li>
       <li>Kostenstelle</li>
       <li><a href="inquiry.md">Antragsart & Spezifizierung</a></li>
@@ -55,7 +55,7 @@ Die verlinkten Elemente sind Listen, die Sie selbst als Projektmanager veränder
   <li><b>Kooperation</b>
     <ol>
       <li>Kooperationsprojekt</li>
-      <li>Beteiligung</li>
+      <li><a href="persons.md">Beteiligung</a></li>
       <li>Weitere Kontakte</li>
     </ol>
   </li>
