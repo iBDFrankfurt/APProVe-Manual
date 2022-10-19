@@ -1,6 +1,6 @@
 ---
 article: false
-title: Updates
+title: Features
 index: false
 icon: creative
 category:
@@ -16,4 +16,5 @@ Check the Features of APProVe!
 - [Todos](todos.md)
 - [Projekte umhängen](reassign.md)
 - [Projektkacheln](tiles.md)
+- [Dashboard-Links](dashboard-links.md)
 

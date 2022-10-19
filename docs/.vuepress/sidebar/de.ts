@@ -16,7 +16,7 @@ export const de = sidebar({
       icon: "note",
       prefix: "features/",
       link: "features/",
-      children: ["todos", "reassign", "tiles"],
+      children: ["todos", "reassign", "tiles", "dashboard-links"],
     },
     {
       icon: "guide",
@@ -37,7 +37,7 @@ export const de = sidebar({
       icon: "note",
       prefix: "updates/",
       link: "updates/",
-      children: ["2-6-3", "2-6-2","2-6-1", "2-6-0", "2-5-3","2-5-2","2-5-1", "2-5-0"],
+      children: ["2-6-4", "2-6-3", "2-6-2","2-6-1", "2-6-0", "2-5-3","2-5-2","2-5-1", "2-5-0"],
     },
   ],
 });
