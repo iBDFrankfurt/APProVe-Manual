@@ -17,7 +17,7 @@ When pushing this repository, the pipeline automatically creates a docker image 
 - You can view the development server at `http://localhost:443/manual/`.
 
 ## Adding new pages
-When adding new pages remember to link them. This can be done in the ``docs/.vuepress/siedbar/de.ts`` file or in the navbar at
+When adding new pages remember to link them. This can be done in the ``docs/.vuepress/sidebar/de.ts`` file or in the navbar at
 ``docs/.vuepress/navbar/de.ts``.
 Images need to be put in the folder ``docs/.vuepress/public/img``.
 
