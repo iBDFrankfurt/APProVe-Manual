@@ -11,7 +11,9 @@ category:
 
 - [3.0.0](3-0-0.md)  <Badge type="primary" text="UPCOMMING" vertical="top" />
 
-- [2.6.4](2-6-4.md)  <Badge type="danger" text="NEW" vertical="top" />
+- [2.6.5](2-6-5.md)  <Badge type="danger" text="NEW" vertical="top" />
+
+- [2.6.4](2-6-4.md) 
 
 - [2.6.3](2-6-3.md) 
 
