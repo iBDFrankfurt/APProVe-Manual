@@ -1,20 +1,18 @@
 ---
 # This is the title of the article
-title: Einführung
-# This is the icon of the page
-icon: any
+title: Bioproben
 # This control sidebar order
-order: 1
+order: 4
 # Set author
 author: Timo Schneider
 # Set writing time
-date: 2022-07-20
+date: 2022-08-09
 # A page can have multiple categories
 category:
-- Introduction
+- Administration
 # A page can have multiple tags
 tag:
-- Introduction
+- Bio Samples
 # this page is sticky in article list
 sticky: false
 # this page will appear in starred articles
@@ -24,14 +22,13 @@ footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankf
 # You can customize copyright content
 copyright: false
 toc: false
-article: false
 ---
 
-## Introduction
+Erfahren Sie hier mehr über die Schwerpunkte in APProVe und wie Sie diese ändern oder erweitern können.
 
+<!-- more -->
 
-- [Einführung](introduction.md)
+::: tip Inhaltsangabe
+[[toc]]
+:::
 
-- [Architektur](architecture.md)
-
-- [Quick Guide](quick-guide.md)

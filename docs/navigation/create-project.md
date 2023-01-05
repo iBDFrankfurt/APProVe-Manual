@@ -203,13 +203,13 @@ APProVe bietet dem Projektmanagement die Möglichkeit auch eigene, biobankspezif
 
 ### 5. Ethik & Finanzierung
 Für jedes Projekt ist anzugeben auf Grundlage welcher Einwilligung geforscht werden soll, ob schon ein eigenes projektspezifisches Ethikvotum vorliegt und in welchem Umfang eine Projektfinanzierung vorliegt. 
-Vorausgefüllt ist hier immer die Nutzung der Biobankeigenen Einwilligung, das Fehlen eines eigenen Votums und keine Drittmittelfinanzierung des Projekts. Nur wenn Ihr Projekt in diesen Punkten abweicht, müssen Sie in diesem Bereich Änderungen vornehmen. 
+Vorausgefüllt ist hier immer die Nutzung der biobankeigenen Einwilligung, das Fehlen eines eigenen Votums und keine Drittmittelfinanzierung des Projekts. Nur wenn Ihr Projekt in diesen Punkten abweicht, müssen Sie in diesem Bereich Änderungen vornehmen. 
 
 #### Eigenes Ethikvotum
 Sollte schon ein eigenes projektspezifisches Votum für Ihr Vorhaben vorliegen, so können Sie dies unter diesem Punkt hochladen und mit einreichen. Dafür müssen Sie zunächst die Nummer des Ethikvotums im Freitextfeld hinterlegen und können im Anschluss eine pdf-Datei mit einer maximalen Größe von 1 MB hochladen. 
 
 #### Projektfinanzierung
-Hier können bereitsvorhandene oder geplante Drittmittelfinanzierungen für das Projekt angegeben werden. Sollte nur eine Teilfinanzierung durch einen Drittmittelgeber geplant oder vorhanden sein, so können Sie dies über die vorhandenen Auswahlpunkte mit angeben.
+Hier können bereits vorhandene oder geplante Drittmittelfinanzierungen für das Projekt angegeben werden. Sollte nur eine Teilfinanzierung durch einen Drittmittelgeber geplant oder vorhanden sein, so können Sie dies über die vorhandenen Auswahlpunkte mit angeben.
 
 ### 6. Nutzungsbedingungen
 Im letzten Schritt müssen die Nutzungsbedingungen der Biobank angenommen werden. Ohne Zustimmung kann kein Projekt eingereicht werden.
