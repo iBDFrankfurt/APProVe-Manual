@@ -37,12 +37,12 @@ Die Software APProVe wurde als microservicebasierte Architektur umgesetzt, die n
 
 ## Microservices
 Wie der Titel bereits verrät, handelt es sich bei der microservicebasierten Architektur um einen neuen Ansatz zur Modularisierung von Software, der diese in einzelne abgeschlossene Funktionalitäten aufteilt. Eberhard Wolff beschreibt in seinem Buch "Microservices: - GRundlagen flexible Softwarearchitekturen" (dpunkt.verlag GmbH, 2015) einige Ansätze zur Definition eines Microservices. So soll ein Microservice individuell bereitgestellt werden können und seine Funktionalität unabhängig anderer Microservices erhalten bleiben. Des Weiteren soll ein Microservice in sich abgeschlossen sein und seine eigene Datenbank oder ein eigenes Datenbankschema beinhalten. Abgeleitet vom Namen Microservice soll dieser dennoch möglichst klein sein. Da für jeden Microservice jedoch eine andere Programmiersprache oder Framework verwendet werden kann, ist hier der Ansatz die Größe auf die Lines of Codes festzulegen, nicht zielführend. Daher kann ein Microservice auch anhand der Größe eines Teams von Entwicklern definiert werden. Nach Eberhard Wolffs Buch wird hierbei die Organisation, die hinter der Entwicklung einer Software steht und die microservicebasierten Architektur gleich gesetzt.
-Die folgende Abbildung zeigt APProVe als Beispiel einer microservicebasierten Architektur.
+Die folgende Abbildung zeigt APProVe als Beispiel einer microservicebasierten Architektur mit den dazugehörigen Abhängigkeiten.
 
 <figure>
   <div class="container">
     <label for="Container">
-    <img :src="$withBase('/img/architecture/APProVe-Micro-Architektur.png')" alt="APProVe Architektur">
+    <img :src="$withBase('/img/architecture/APProVe-Overview-Dependencies.png')" alt="APProVe Architektur">
     </label>
       <figcaption>APProVe Architektur</figcaption>
   </div>
@@ -99,12 +99,13 @@ APProVe wurde anhand folgender Technologien konzeptioniert und entwickelt.
 </figure>
 
 
-## Entity-Relationship-Diagramm
+## Kommunikation der Services
+Die nachfolgende Abbildung zeigt die Kommunikation der einzelnen Services zueinander.
 
 <figure>
   <div class="container">
     <label for="Entity">
-       <img :src="$withBase('/img/architecture/Datenbank-Entity-Relation.jpg')" alt="Entity-Relationship Diagramm von APProVe">
+       <img :src="$withBase('/img/architecture/APProVe-Overview-Calls.png')" alt="Entity-Relationship Diagramm von APProVe">
     </label>
       <figcaption>Entity-Relationship Diagramm von APProVe</figcaption>
   </div>
