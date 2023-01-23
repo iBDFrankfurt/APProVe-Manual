@@ -9,7 +9,7 @@ category:
 
 ## Changelogs
 
-- [3.0.0](3-0-0.md)  <Badge type="primary" text="UPCOMMING" vertical="top" />
+- [3.0.0](3-0-0.md)  <Badge type="primary" text="UPCOMING" vertical="top" />
 
 - [2.6.5](2-6-5.md)  <Badge type="danger" text="NEW" vertical="top" />
 
