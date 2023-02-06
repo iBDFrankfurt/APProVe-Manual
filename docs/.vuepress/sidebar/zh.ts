@@ -20,7 +20,7 @@ export const zh = sidebar({
         {
           text: "文章 1-4",
           icon: "note",
-          collapsable: true,
+          collapsible: true,
           prefix: "article/",
           children: ["article1", "article2", "article3", "article4"],
         },
@@ -31,7 +31,7 @@ export const zh = sidebar({
             {
               text: "文章 5-8",
               icon: "note",
-              collapsable: true,
+              collapsible: true,
               prefix: "article/",
               children: ["article5", "article6", "article7", "article8"],
             },

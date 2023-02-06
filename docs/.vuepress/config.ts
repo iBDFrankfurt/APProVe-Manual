@@ -1,8 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
-import { webpackBundler } from '@vuepress/bundler-webpack'
-import {createDevServerConfig} from "@vuepress/bundler-webpack/lib/dev/createDevServerConfig";
+import { webpackBundler } from '@vuepress/bundler-webpack';
+
 export default defineUserConfig({
   base: "/manual/",
   host: "0.0.0.0",
