@@ -34,4 +34,4 @@ article: false
 
 - [Architektur](architecture.md)
 
-- [Quick Guide](quick-guide.md)
+- [Inbetriebnahme](quick-guide.md)

@@ -9,13 +9,15 @@ export const de = sidebar({
       text: "Einführung",
       prefix: "introduction/",
       link: "introduction/",
-      children: ["introduction", "architecture"],
+      collapsible: true,
+      children: ["introduction", "architecture", "quick-guide"],
     },
     {
       text: "Features",
       icon: "note",
       prefix: "features/",
       link: "features/",
+      collapsible: true,
       children: ["todos", "reassign", "tiles", "dashboard-links"],
     },
     {
@@ -23,6 +25,7 @@ export const de = sidebar({
       text: "Navigation",
       prefix: "navigation/",
       link: "navigation/",
+      collapsible: true,
       children: ["registration", "login", "dashboard", "view-project", "create-project", "edit-project", "lists"],
     },
     {
@@ -30,6 +33,7 @@ export const de = sidebar({
       icon: "config",
       prefix: "management/",
       link: "management/",
+      collapsible: true,
       children: ["mainFocus", "inquiry", "patientData", "biosample", "services", "tiles"],
     },
     {
@@ -37,6 +41,7 @@ export const de = sidebar({
       icon: "note",
       prefix: "updates/",
       link: "updates/",
+      collapsible: true,
       children: ["3-0-0", "2-6-5", "2-6-4", "2-6-3", "2-6-2","2-6-1", "2-6-0", "2-5-3","2-5-2","2-5-1", "2-5-0"],
     },
   ],

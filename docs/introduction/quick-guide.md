@@ -43,4 +43,4 @@ Standardmäßig heißt dieser Realm bei der ersten Inbetriebnahme ``UCT``. Diese
 Wird ein Projekt in einem Realm eingereicht, so erhält dieses Projekt automatisch eine Realm-Projektnummer basierend auf das Kürzel des Realms.
 :::
 
-Mehr Informationen dazu finden Sie unter <a href="../management/realm.html">hier</a>.
+Mehr Informationen dazu finden Sie unter <a href="../management/realm.html">Realm</a>.
