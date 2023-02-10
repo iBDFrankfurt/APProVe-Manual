@@ -49,7 +49,3 @@ Dies ist auch das erste Element, dass ein Antragsersteller auswählen kann.
 ## Patientendatensatz
 
 ## Patientendatensatzgruppe
-
-## Export
-
-## Import
