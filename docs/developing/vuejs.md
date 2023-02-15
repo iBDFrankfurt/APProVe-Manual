@@ -231,12 +231,12 @@ export default {
           :fields=""
           :api=""
           @table-loaded=""
-          @open-modal=""
-          :labels=""
+          :csv-labels=""
           :csv-fields=""
           :file-name=""
           sort-by=""
           :records-per-page=""
+          @open-modal=""
           :modal-id=""
           :modal-data=""
           :mode=""
@@ -279,57 +279,22 @@ export default {
 
 ````vue
 <template>
-  <div>
-    <div class="row mt-2">
-      <div class="col-md-12">
-        <h3>
-          {{ $t("appointmentTitle.header") }}
-        </h3>
-        <p>
-          {{ $t("appointmentTitle.description") }}
-        </p>
-      </div>
-    </div>
+  ...
     <!--  Falls CSV-Importe gewünscht sind, muss die Komponente csv-import eingebunden werden  -->
     <csv-import
-        :item-properties="itemProperties"  <!-- 1 -->
-        :table-headers="csvTableHeaders" <!-- 2 -->
-        :add-multiple-url="badgeApi" <!-- 3 -->
-        :locale="locale" Wir erhalten eine locale bereits über die props, diese kann hier wieder verwendet werden
+        :item-properties="itemProperties"  <!-- 1 Variable in data() -->
+        :table-headers="csvTableHeaders" <!-- 2 Variable in data() -->
+        :add-multiple-url="badgeApi" <!-- 3 Variable in data() -->
+        :locale="locale" <!-- Wir erhalten eine locale bereits über die props, diese kann hier wieder verwendet werden-->
         @refresh="refreshTable" <!-- 4  Wir erstellen eine Methode, die die Tabelle nach dem importieren neu läd -->
         show-import <!-- 5 Wir erlauben einen Import der Termintitel -->
         :show-help="false" <!-- 5 Wir benötigen keinen Text als Hilfe -->
         help-text=""
         :authorization-header="authorizationHeader" <!-- 6 Die Abfrage benötigt ein Bearer token -->
         token-based
-        component-name="csv-import-appointment-title" <!-- 7 Aussagekräftiger Name, wird für ID's verwendet -->
+        :component-name="componentName" <!-- 7 Aussagekräftiger Name, wird für ID's verwendet -->
     ></csv-import>
-    <div class="col-sm-12">
-      <table-template
-          ref="appointmentTable" <!-- 4 ref erstellen, um auf die Methoden der Tabelle zugreifen zu können -->
-          component-name=""
-          :authorization-header=""
-          token-based
-          :locale=""
-          :fields=""
-          :api=""
-          @table-loaded=""
-          @open-modal=""
-          :labels=""
-          :csv-fields=""
-          :file-name=""
-          sort-by=""
-          :records-per-page=""
-          :modal-id=""
-          :modal-data=""
-          :mode=""
-          :modal-items=""
-          :modal-infos=""
-          :needs-info=""
-          :needs-resource=""
-      ></table-template>
-    </div>
-  </div>
+    ...
 </template>
 <script>
 import i18n from "../../i18n";
@@ -363,8 +328,9 @@ export default {
   data() {
     return {
       itemProperties: ['title', 'description'], // Die Klasse AppointmentTitle.java aus dem backend kann hier nachgeschaut werden, wir interessieren uns für title und description
-      csvTableHeaders: [$t("appointmentTitle.title"), $t("appointmentTitle.descriptionAppointment")] // Übersetzungen der Tabellenspalte, die angezeigt werden sollen
-      badgeApi: this.api+"/batch" // Backend url of batch upload (post)
+      csvTableHeaders: [$t("appointmentTitle.title"), $t("appointmentTitle.descriptionAppointment")], // Übersetzungen der Tabellenspalte, die angezeigt werden sollen
+      badgeApi: this.api+"/batch", // Backend url of batch upload (post)
+      componentName: "csv-import-appointment-title" // 7
     }
   },
   mounted() {
@@ -385,10 +351,303 @@ export default {
 </script>
 ````
 
-Schritte:
+#### Schritte
 1. Wir müssen der Komponente sagen, welche Felder aus der CSV-Datei in eine JSON-Datei extrahiert werden sollen. Das können wir über eine Variable in `data()` lösen.
 2. Der CSV-Import zeigt eine Tabelle an, wir können hier die Überschrift festlegen.
 3. Wir benötigen einen Endpunkt, um unsere Termintitel hochladen zu können. Normalerweise ist dies die Standard-API mit ``/batch``. 
 4. Es wird eine Methode erstellt, die die Tabelle neu laden soll. Refresh wird getriggert, sobald der Upload der CSV-Datei erfolgreich war. Wir können hier die Methode ``loadData()`` aus dem ``tableTemplate`` nutzen. **WICHTIG!**: ``ref`` in ``<table-template>`` nicht vergessen!
 5. Die Hilfetexte werden als b-collapse dargestellt und erscheinen, bevor die Datei importiert werden soll. Als Text kann wieder ein i18n verwendet werden.
-6. token-based und authorization token werden bentötigt. Diese können von Keycloak über cURL oder Postman bezogen werden (zB .../realms/UCT/protocol/openid-connect/token). Endpunkt ist die im backend hinterlegte ``keycloak.auth-server-url``.
+6. token-based und authorization token werden benötigt. Diese können von Keycloak über cURL oder Postman bezogen werden (zB .../realms/UCT/protocol/openid-connect/token). Endpunkt ist die im backend hinterlegte ``keycloak.auth-server-url``.
+
+
+### 4. **Schritt: Template Properties für table-template befüllen**
+
+````vue
+<template>
+    ...
+    <div class="col-sm-12">
+      <table-template
+          ref="appointmentTable"
+          :component-name="componentName-'table'"
+          :authorization-header="authorizationHeader"
+          token-based
+          :locale="locale"
+          :fields="fields" <!-- 1 Variable in data() Welche Felder in der Tabelle angezeigt werden sollen. Kann in AppointmentTitle.java im backend nachgeschaut werden. -->
+          :api="api" <!-- 2 Backend Aufruf, die Such und Sortierparameter werden automatisch erzeugt -->
+          @table-loaded="tableLoaded" <!-- 3 Hier kann eine Funktion angegeben werden, die ausgeführt wird, wenn die Tabelle geladen wurde -->
+          :csv-labels="csvLabels" <!-- 4 --> 
+          :csv-fields="csvFields" <!-- 4 -->
+          :file-name="fileName" <!-- 4 -->
+          sort-by="title" <!-- 5 Nach welchem Attribut die Tabelle initial sortiert werden soll -->
+          :records-per-page="10" <!-- 5 Wieviele Items pro Seite in der Tabelle angezeigt werden -->
+          @open-modal=""
+          :modal-id=""
+          :modal-data=""
+          :mode=""
+          :modal-items=""
+          :modal-infos=""
+          :needs-info=""
+          :needs-resource=""
+      ></table-template>
+    </div>
+    <div v-if="tableLoaded">  <!-- 3 Zum Beispiel eine weitere Komponente, die darauf wartet, dass die Tabelle geladen ist -->
+      Table Loaded!
+    </div>
+  ...
+</template>
+<script>
+import i18n from "../../i18n";
+import CsvImport from "../template/csvImport.vue";
+import TableTemplate from "../template/tableTemplate.vue";
+import TableUtilities from "../../utils/TableUtilities"; // 1
+import moment from "moment"; // 4
+export default {
+  name: "AdminAppointmentTitle",
+  components: {
+    CsvImport,
+    TableTemplate
+  },
+  props: { 
+    locale: {
+      type: String
+    },
+    api: {          
+      type: String,
+      required: true
+    },
+    authorizationHeader: {   
+      type: String,
+      required: false,
+      default: null
+    },
+    tokenBased: {     
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+  data() {
+    return {
+     ...
+      componentName: "import-appointment-title",
+      fields: [ // 1 
+        {
+          key: "id",
+          label: this.$t("samples.id"),
+          sortField: "id",
+          visible: false,
+          sortable: true
+        },
+        {
+          key: "title",
+          label: this.$t("appointmentTitle.title"),
+          sortField: "title",
+          formatter: (value) => {
+            return TableUtilities.getBadgeLabelColor(value, "info", null);
+          },
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "description",
+          label: this.$t("appointmentTitle.descriptionAppointment"),
+          sortField: "description",
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "createdAt",
+          label: this.$t("projectSubmission.services.createdAt"),
+          sortField: "createdAt",
+          formatter: (value) => {
+            return TableUtilities.formatDate(value);
+          },
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "updatedAt",
+          label: this.$t("projectSubmission.services.updatedAt"),
+          sortField: "updatedAt",
+          formatter: (value) => {
+            return TableUtilities.formatDate(value);
+          },
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "__slot:actions",
+          label: this.$t("projectSubmission.services.actions"),
+          visible: true
+        }
+      ],
+      tableLoaded: false, // 3,
+      csvLabels: {      // 4
+          id: "id",
+          title: "title",
+          description: "description",
+          createdAt: "createdAt",
+          updatedAt: "updatedAt"
+       },
+       csvFields: ["id", "title", "description", "createdAt", "updatedAt"], // 4
+       fileName: "exported_appointment_titles_" + moment().format("DD.MM.YYYY HH:mm") + ".csv",  // 4
+    }
+  },
+  mounted() {
+    i18n.locale = this.locale; 
+  },
+  watch: {
+    locale: function (val) {
+      i18n.locale = val;
+    }
+  },
+  methods: {
+    refreshTable() { 
+      this.$refs.appointmentTable.loadData();
+    },
+    // 3
+    tableLoaded() {
+      this.tableLoaded = true;
+    }
+  }
+}
+</script>
+````
+
+#### Schritte
+1. Die Tabelle benötigt Felder, die das im Backend aufgerufene Object anzeigt. Die Felder sind dabei die Attribute der ``@Entity``-Class im Backend. Die Felder bestehen aus folgenden Attributen :
+   1. ``key``: Attribut im Java-Object, zB Id oder description
+   2. ``label``: Spaltenüberschrift im Header
+   3. ``sortField``: nach welchem Attribut im Java-Object gesucht werden soll. 
+   4. ``sortable``: ob das Attribut suchbar sein soll.
+   5. ``visible``: ob das Attribut in der Tabelle angezeigt werden soll. Dies kann in den Einstellungn über der Tabelle (ListSettings) ein und ausgeschaltet werden.
+   6. ``formatter``: Eine Funktion, die ein Attribut anpassen kann, wird ausgeführt bevor die Spalte angezeigt wird. Zum Beispiel ein Datum umwandeln. Vorgefertigte Funktionen können in ``TableUtilities.js`` verwendet werden.
+2. Wir können die ``api`` aud den Props verwendent. Die Table Komponente erstellt die Such und Sortierparameter (`sort, per_page, page, filter`) automatisch.
+3. Die Tabelle gibt ein Feedback zurück, sobald diese geladen wurde. Wir verwenden in diesem einfachen Beispiel eine Variable die darauf überprüft, ob die Tabelle fertig geladen wurde. Es kann aber auch für Charts verwendet werden.
+4. Ähnlich wie beim ``csvImport`` wird hier der CSV-Export erzeugt. Es kann abgegeben werden, welche Attribute exportiert werden sollen, und wie die Spalten heißen. **!WICHTIG!** Die Spaltennamen müssen gleich heißen, wie im Import. Siehe [3.1](#3-schritt-template-properties-für-csv-import-befüllen)
+   1. ``csv-fields``: Felder innerhalb des Json-Objekts, das Sie exportieren möchten. Wenn keine Angabe gemacht wird, werden alle Eigenschaften des Json-Objekts exportiert. Verwenden Sie die Funktion, um die Daten zu filtern und nur die gewünschten Eigenschaften zu erhalten.
+   2. ``csv-labels``: Legen Sie die Beschriftung für die Tabellenspalten fest.
+   3. ``file-name``: Name der exportierten CSV-Datei
+5. Sie können angeben, nach welcher ``sortable`` Spalte initial sortiert werden soll und wie viele Items angezeigt werden sollen in der Tabelle.
+
+### 5. **Schritt: Modal für Edit und Add Mode erstellen**
+
+````vue
+<template>
+  ...
+    <div class="col-sm-12">
+      <table-template
+          ref="appointmentTable"
+          :component-name="componentName-'table'"
+          :authorization-header="authorizationHeader"
+          token-based
+          :locale="locale"
+          :fields="fields"
+          :api="api"
+          @table-loaded="tableLoaded"
+          :csv-labels="csvLabels" 
+          :csv-fields="csvFields" 
+          :file-name="fileName" 
+          sort-by="title"
+          :records-per-page="10"
+          @open-modal=""
+          :modal-id="viewAndDeleteModalId" <!-- 1 -->
+          :modal-data="data" <!-- 1 -->
+          :mode="mode" <!-- 1 -->
+          :modal-items="" <!-- 2 -->
+          :modal-infos="" 
+          :needs-info="true" 
+          :needs-resource="true"
+      ></table-template>
+    </div>
+...
+</template>
+<script>
+...
+import { MODE } from "../../utils/tableMode"; // 1
+export default {
+  name: "AdminAppointmentTitle",
+  components: {
+    CsvImport,
+    TableTemplate
+  },
+  props: { 
+    locale: {
+      type: String
+    },
+    api: {          
+      type: String,
+      required: true
+    },
+    authorizationHeader: {   
+      type: String,
+      required: false,
+      default: null
+    },
+    tokenBased: {     
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+  data() {
+    return {
+      ... 
+       data: {}, // 1
+       viewAndDeleteModalId: this.componentName + "-view-modal",  // 1
+       modalItems: [      // 2
+        {
+           key: 'id',
+           label: this.$t('list.id'),
+           formatter: 'badge-info'
+        },
+        {
+           key: 'title',
+           label: this.$t('appointmentTitle.title')
+        },
+        {
+           key: 'description',
+           label: this.$t('appointmentTitle.descriptionAppointment')
+        }
+     ],
+    }
+  },
+  mounted() {
+    i18n.locale = this.locale; 
+  },
+  watch: {
+    locale: function (val) {
+      i18n.locale = val;
+    }
+  },
+  methods: {
+    ...
+    // 1
+    showModal(mode, data) {
+      if (data !== null) {
+        this.data = Object.assign(data, {}); // Kopiert die Daten der angeklickten Spalte
+      }
+      this.mode = mode;
+      // 1
+      if(this.mode === MODE.VIEW || this.mode === MODE.DELETE) {
+        this.$bvModal.show(this.viewAndDeleteModalId);
+      }
+    }
+  }
+}
+</script>
+````
+
+#### Schritte
+1. Ein View und Delete Modal wird automatisch erstellt, dafür müssen einige Dinge vorher definiert werden.
+   1. ``modal-id``: gibt die id des modals an zum Anschauen und Löschen von Objekten
+   2. ``data``: Gibt die Daten der angeklickten Spalte an das Modal über ``this.data = Object.assign(data, {});``
+   3. ``mode``: view oder delete
+2. Die Ansicht für das View/Delete-Modal benötigt die Objekt-Attribute aus der ``AppointmentTitle.class`` im Backend.
+   1. modalItems = Besteht aus einem Object Array mit den Feldern:
+      1. ``key``: Wie bei den `fields` in der Tabelle. Beschreibt die Attribute  der ``AppointmentTitle.class``
+      2. ``label``: Wie bei den `fields` in der Tabelle. Beschreibt die Überschrift.
+      3. ``formatter``: Gibt an, wie die Zeile angezeigt werden soll. Bisher implementiert sind:
+         - ``badge-info``: Ruft die Funktion TableUtilities.getBadgeLabelColor(property, "info") auf
+         - ``date``: Ruft die Funktion TableUtilities.formatDate(property) auf
+         - ``icon``: Ruft die Funktion TableUtilities.getBadgeLabelColor(property, "info", property+' fa-2') auf
