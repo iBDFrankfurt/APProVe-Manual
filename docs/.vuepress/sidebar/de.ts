@@ -44,5 +44,13 @@ export const de = sidebar({
       collapsible: true,
       children: ["3-0-1", "3-0-0", "2-6-5", "2-6-4", "2-6-3", "2-6-2","2-6-1", "2-6-0", "2-5-3","2-5-2","2-5-1", "2-5-0"],
     },
+    {
+      text: "Entwicklung",
+      icon: "config",
+      prefix: "developing/",
+      link: "developing/",
+      collapsible: true,
+      children: ["vuejs"],
+    },
   ],
 });
