@@ -530,7 +530,7 @@ export default {
    3. ``file-name``: Name der exportierten CSV-Datei
 5. Sie können angeben, nach welcher ``sortable`` Spalte initial sortiert werden soll und wie viele Items angezeigt werden sollen in der Tabelle.
 
-### 5. **Schritt: Modal für Edit und Add Mode erstellen**
+### 5. **Schritt: Modal für View und Delete Mode erstellen**
 
 ````vue
 <template>
@@ -554,10 +554,10 @@ export default {
           :modal-id="viewAndDeleteModalId" <!-- 1 -->
           :modal-data="data" <!-- 1 -->
           :mode="mode" <!-- 1 -->
-          :modal-items="" <!-- 2 -->
+          :modal-resources="modalResources" <!-- 2 -->
           :modal-infos="" 
-          :needs-info="true" 
-          :needs-resource="true"
+          :needs-info="true"  <!-- 2 -->
+          :needs-resource="true" <!-- 2 -->
       ></table-template>
     </div>
 ...
@@ -609,7 +609,18 @@ export default {
            key: 'description',
            label: this.$t('appointmentTitle.descriptionAppointment')
         }
-     ],
+       ], 
+       modalResources: [
+         {
+           text: this.$t("projectSubmission.clinics.connectedPersons"),
+           propertyName: "clinicPersons",
+           highlightFilter: ['name', 'description'],
+           sortParams: ['name', 'description'],
+           itemNames: [this.$t('realmAdministration.connectedService'), 'Beschreibung'],
+           sortDirection: "asc",
+           sortProperty: "name"
+         }
+     ]
     }
   },
   mounted() {
@@ -651,3 +662,417 @@ export default {
          - ``badge-info``: Ruft die Funktion TableUtilities.getBadgeLabelColor(property, "info") auf
          - ``date``: Ruft die Funktion TableUtilities.formatDate(property) auf
          - ``icon``: Ruft die Funktion TableUtilities.getBadgeLabelColor(property, "info", property+' fa-2') auf
+   2. ``needs-info``: Gibt an, ob ``createdAt``, ``createdBy``, ``updatedAt`` und ``lastModifiedBy`` angezeigt werden sollen.
+   3. ``needs-resource``: Gibt an, ob das Object aus dem Backend verknüpfte Elemente hat. Zum Beispiel die participants in project.
+   4. ``modal-resources``: Verknüpfte Elemente des Objects aus dem Backend. Benötigt folgende Informationen
+      1. ``text``: Angezeigter Text für die verknüpften Elemente im Modal.
+      2. ``propertyName``: Object.property. Zum Beispiel ``participants`` in Project.class
+      3. ``highlightFilter``: Die Verknüpften Elemente werden als Tabelle angezeigt, hier kann festgelegt werden, welche Items in der Tabelle hervorgehoben werden sollen.
+      4. ``sortParams``: Legen Sie fest, welche Properties durchsuchbar sein sollen. Zum Beispiel ``firstName`` bei den ``participants``.
+      5. ``itemNames``: Tabellenüberschriften
+      6. ``sortDirection`` : Initiale Sortierung ``asc`` oder ``desc``
+      7. ``sortProperty``: Welche Spalte initial sortiert werden soll
+
+### 6. **Schritt: Modal für Add und Edit Mode erstellen**
+Da diese beiden Modals eine eigene Validierung benötigen, sollten diese Modals per Hand selbst erstellt werden.
+
+````vue
+<template>
+  ...
+    <div class="col-sm-12">
+      <table-template
+         ...
+      ></table-template>
+    </div>
+      <appointment-title-modal
+           modal-size="xl"
+           :modal-id="addAndEditModalId"
+           :data="data"
+           :title="$tc('biobankDates.addHeader')"
+           :description="$tc('biobankDates.addDescription')"
+           :mode="mode"
+           :authorization-header="authorizationHeader"
+           token-based
+           @submit-data="submit"
+      ></appointment-title-modal>
+</template>
+<script>
+...
+import { MODE } from "../../utils/tableMode";
+import AppointmentTitleModal from "../modals/AppointmentTitleModal"; // 1
+export default {
+  name: "AdminAppointmentTitle",
+  components: {
+    CsvImport,
+    TableTemplate,
+    AppointmentTitleModal // 1
+  },
+  props: { 
+    locale: {
+      type: String
+    },
+    api: {          
+      type: String,
+      required: true
+    },
+    authorizationHeader: {   
+      type: String,
+      required: false,
+      default: null
+    },
+    tokenBased: {     
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+  data() {
+    return {
+      ... 
+       data: {},
+       viewAndDeleteModalId: this.componentName + "-view-modal",
+       addAndEditModalId: this.componentName + "-add-modal" // 1
+     
+    }
+  },
+  mounted() {
+    i18n.locale = this.locale; 
+  },
+  watch: {
+    locale: function (val) {
+      i18n.locale = val;
+    }
+  },
+  methods: {
+    ...
+    // 1
+    showModal(mode, data) {
+      if (data !== null) {
+        this.data = Object.assign(data, {}); // Kopiert die Daten der angeklickten Spalte
+      }
+      this.mode = mode;
+      if(this.mode === MODE.VIEW || this.mode === MODE.DELETE) {
+        this.$bvModal.show(this.viewAndDeleteModalId);
+      }
+      // 1 
+      if(this.mode === MODE.EDIT || this.mode === MODE.ADD) {
+         this.$bvModal.show(this.addAndEditModalId);
+      }
+    }
+  }
+}
+</script>
+````
+
+#### Schritte
+1. Das Modal ``AppointmentTitleModal`` muss zunächst selbst erstellt werden, hierfür kann bei bereits vorhandenen Modals nachgeschaut werden. Zum Beispiel ``modals/AdminBiobankDateModal.vue``.
+   1. Anschließend importieren wir das Modal in den components und fügen es im ``<template>`` ein. jetzt gilt es, die props auszufüllen. Dazu können bereits vorhandene Daten benutzt werden, zB ``data`` oder ``token-based``.
+   2. In der ``showModal`` Methode wird ein weitere Aufruf hinzugefügt ``this.$bvModal.show(this.addAndEditModalId);`` um das Modal zu öffnen.
+
+
+### Komplettes Beispiel
+
+````vue
+<template>
+  <div id="biobankDates">
+    <div class=" pt-3">
+      <div class="" id="appointment" role="tabpanel" aria-labelledby="appointment-home-tab">
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <h3>
+              {{ $t("biobankDates.header") }}
+            </h3>
+            <p>
+              {{ $t('biobankDates.description') }}
+            </p>
+          </div>
+        </div>
+        <csv-import
+          :item-properties="['date', 'title', 'remark', 'icon']"
+          :table-headers="[$t('biobankDates.date'),$t('biobankDates.title'),$t('biobankDates.remark'), 'Icon']"
+          :add-multiple-url="biobankDatesApi+'/batch'"
+          :locale="locale"
+          @refresh=""
+          help-text=""
+          show-import
+          :show-help="false"
+          :authorization-header="authorizationHeader"
+          component-name="admin-biobank-dates"
+          token-based
+        ></csv-import>
+        <div class="col-sm-12">
+          <table-template
+            ref="biobankDatesTable"
+            component-name="admin-biobank-dates"
+            :authorization-header="authorizationHeader"
+            token-based
+            :locale="locale"
+            :fields="fieldsDates"
+            :api="biobankDatesApi"
+            @table-loaded="transform"
+            @open-modal="showModal"
+            :csv-labels="csvLabels"
+            :csv-fields="csvFields"
+            :file-name="fileName"
+            sort-by="date"
+            :records-per-page="10"
+            :modal-id="viewAndDeleteModalId"
+            :modal-data="data"
+            :mode="mode"
+            :modal-items="modalItems"
+            :modal-resources="modalResources"
+            :needs-info="false"
+            :needs-resource="true"
+          ></table-template>
+          <admin-biobank-date-modal
+            modal-size="xl"
+            :modal-id="addAndEditModalId"
+            :data="data"
+            :title="$tc('biobankDates.addHeader')"
+            :description="$tc('biobankDates.addDescription')"
+            :mode="mode"
+            :appointment-url="listAppointmentTitleUrl"
+            :authorization-header="authorizationHeader"
+            token-based
+            @submit-data="submit"
+          ></admin-biobank-date-modal>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import AdminBiobankDateModal from "../modals/AdminBiobankDateModal";
+import { tableHttpService } from "../../services/TableHttpService";
+import { MODE } from "../../utils/tableMode";
+import i18n from "../../i18n";
+import moment from "moment";
+import PieChart from "../Charts/PieChart";
+import BarChart from "../Charts/BarChart";
+import TableUtilities from "../../utils/TableUtilities";
+import CsvImport from "../template/csvImport2.vue";
+import TableTemplate from "../template/tableTemplate.vue";
+import ModalObjectViewAndDeleteTemplate from "../modals/template/ModalObjectViewAndDeleteTemplate.vue";
+import Http from "../../utils/Http";
+export default {
+  name: "BiobankDates",
+  components: {
+    ModalObjectViewAndDeleteTemplate,
+    AdminBiobankDateModal,
+    CsvImport,
+    TableTemplate,
+    PieChart,
+    BarChart
+  },
+  props: {
+    biobankDatesApi: {
+      type: String,
+      required: true
+    },
+    listAppointmentTitleUrl: {
+      type: Object,
+      required: false
+    },
+    locale: {
+      type: String,
+      required: false
+    },
+    authorizationHeader: {
+      type: String,
+      required: false,
+      default: null
+    },
+    tokenBased: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+  mounted() {
+    i18n.locale = this.lang;
+  },
+  async created() {
+    // Moment Locale
+    moment.locale("de");
+  },
+
+  data() {
+    return {
+      lang: this.locale,
+      mode: MODE.SEARCH,
+      biobankDates: [],
+      csvLabels: {
+        id: "id",
+        date: "date",
+        title: "title",
+        remark: "remark",
+        icon: "icon",
+        createdAt: "createdAt",
+        updatedAt: "updatedAt"
+      },
+      csvFields: ["id", "date", "title", "remark", "icon", "createdAt", "updatedAt"],
+      fileName: "exported_biobank_dates_" + moment().format("DD.MM.YYYY HH:mm") + ".csv",
+      fieldsDates: [
+        {
+          key: "action",
+          label: this.$t("projectSubmission.services.actions"),
+          visible: true
+        },
+        {
+          key: "id",
+          label: this.$t("samples.id"),
+          sortField: "id",
+          visible: false,
+          sortable: true
+        },
+        {
+          key: "date",
+          label: this.$t("biobankDates.date"),
+          sortField: "date",
+          visible: true,
+          sortable: true,
+          formatter: (value) => {
+            return TableUtilities.formatDate(value);
+          }
+        },
+        {
+          key: "title",
+          label: this.$t("biobankDates.title"),
+          sortField: "title",
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "remark",
+          label: this.$t("biobankDates.remark"),
+          sortField: "remark",
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "icon",
+          label: "Icon",
+          sortField: "icon",
+          formatter: (value) => {
+            return TableUtilities.getBadgeLabelColor(value, "info", value);
+          },
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "createdAt",
+          label: this.$t("projectSubmission.services.createdAt"),
+          sortField: "createdAt",
+          formatter: (value) => {
+            return TableUtilities.formatDate(value);
+          },
+          visible: true,
+          sortable: true
+        },
+        {
+          key: "updatedAt",
+          label: this.$t("projectSubmission.services.updatedAt"),
+          sortField: "updatedAt",
+          formatter: (value) => {
+            return TableUtilities.formatDate(value);
+          },
+          visible: true,
+          sortable: true
+        }
+      ],
+      biobanksLoaded: false,
+      filter: "",
+      modalResources: [
+        // {
+        //   text: this.$t("projectSubmission.clinics.connectedPersons"),
+        //   propertyName: "clinicPersons",
+        //   highlightFilter: ['name', 'description'],
+        //   sortParams: ['name', 'description'],
+        //   itemNames: [this.$t('realmAdministration.connectedService'), 'Beschreibung'],
+        //   sortDirection: "asc",
+        //   sortProperty: "name"
+        // }
+      ],
+      modalItems: [
+        {
+          key: 'title',
+          label: this.$t('biobankDates.title'),
+          formatter: 'badge-info'
+        },
+        {
+          key: 'date',
+          label: this.$t('biobankDates.date'),
+          formatter: 'date'
+        },
+        {
+          key: 'remark',
+          label: this.$t('biobankDates.remark')
+        },
+        {
+          key: 'icon',
+          label: 'Icon',
+          formatter: 'icon'
+        }
+      ],
+      data: {},
+      viewAndDeleteModalId: "admin-biobank-dates-view-modal",
+      addAndEditModalId: "admin-biobank-dates-add-modal"
+    };
+  },
+  watch: {
+    lang: function (val) {
+      i18n.locale = val;
+    }
+  },
+  computed: {},
+
+  methods: {
+    transform(data) {
+      this.biobankDates = Object.assign(data, {});
+      this.biobanksLoaded = true;
+    },
+    showModal(mode, data) {
+      if (data !== null) {
+        this.data = Object.assign(data, {});
+      }
+      this.mode = mode;
+      if(this.mode === MODE.EDIT || this.mode === MODE.ADD) {
+        this.$bvModal.show(this.addAndEditModalId);
+      }
+      if(this.mode === MODE.VIEW || this.mode === MODE.DELETE) {
+        this.$bvModal.show(this.viewAndDeleteModalId);
+      }
+    },
+    submit(data, mode) {
+      this.mode = mode;
+      if (this.mode === MODE.ADD) {
+        tableHttpService.postData(this.biobankDatesApi, data, this.authorizationHeader).then((response) => {
+          if (response.status === 201) {
+            this.$bvModal.hide(this.addAndEditModalId);
+            Http.successToast(this.$t("toast.created"));
+            this.$refs.biobankDatesTable.loadData();
+          }
+        });
+      }
+      if (this.mode === MODE.EDIT) {
+        tableHttpService.patchData(this.biobankDatesApi, data.id, data, this.authorizationHeader).then((response) => {
+          if (response.status === 200) {
+            this.$bvModal.hide(this.addAndEditModalId);
+            Http.successToast(this.$t("toast.updated"));
+            this.$refs.biobankDatesTable.loadData();
+          }
+        });
+      }
+    },
+    refreshTable() {
+      this.$refs.biobankDatesTable.loadData();
+    }
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+</style>
+
+````
