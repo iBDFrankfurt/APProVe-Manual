@@ -693,7 +693,7 @@ Da diese beiden Modals eine eigene Validierung benötigen, sollten diese Modals 
            :mode="mode"
            :authorization-header="authorizationHeader"
            token-based
-           @submit-data="submit"
+           @submit-data="submit" // 2
       ></appointment-title-modal>
 </template>
 <script>
@@ -758,6 +758,27 @@ export default {
       if(this.mode === MODE.EDIT || this.mode === MODE.ADD) {
          this.$bvModal.show(this.addAndEditModalId);
       }
+    },
+   submit(data, mode) {
+      this.mode = mode;
+      if (this.mode === MODE.ADD) {
+         tableHttpService.postData(this.biobankDatesApi, data, this.authorizationHeader).then((response) => {
+            if (response.status === 201) {
+               this.$bvModal.hide(this.addAndEditModalId);
+               Http.successToast(this.$t("toast.created"));
+               this.$refs.appointmentTable.loadData();
+            }
+         });
+      }
+      if (this.mode === MODE.EDIT) {
+         tableHttpService.patchData(this.biobankDatesApi, data.id, data, this.authorizationHeader).then((response) => {
+            if (response.status === 200) {
+               this.$bvModal.hide(this.addAndEditModalId);
+               Http.successToast(this.$t("toast.updated"));
+               this.$refs.appointmentTable.loadData();
+            }
+         });
+      }
     }
   }
 }
@@ -768,7 +789,7 @@ export default {
 1. Das Modal ``AppointmentTitleModal`` muss zunächst selbst erstellt werden, hierfür kann bei bereits vorhandenen Modals nachgeschaut werden. Zum Beispiel ``modals/AdminBiobankDateModal.vue``.
    1. Anschließend importieren wir das Modal in den components und fügen es im ``<template>`` ein. jetzt gilt es, die props auszufüllen. Dazu können bereits vorhandene Daten benutzt werden, zB ``data`` oder ``token-based``.
    2. In der ``showModal`` Methode wird ein weitere Aufruf hinzugefügt ``this.$bvModal.show(this.addAndEditModalId);`` um das Modal zu öffnen.
-
+2. Wir implementierung die ``submit``-Methode die den ``tableHttpService`` aufruft, um Daten an das Backend zu senden
 
 ### Komplettes Beispiel
 
