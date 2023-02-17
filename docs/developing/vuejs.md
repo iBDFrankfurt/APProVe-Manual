@@ -388,6 +388,7 @@ export default {
           :modal-infos=""
           :needs-info=""
           :needs-resource=""
+          :add-button-text=""
       ></table-template>
     </div>
     <div v-if="tableLoaded">  <!-- 3 Zum Beispiel eine weitere Komponente, die darauf wartet, dass die Tabelle geladen ist -->
@@ -401,6 +402,7 @@ import CsvImport from "../template/csvImport.vue";
 import TableTemplate from "../template/tableTemplate.vue";
 import TableUtilities from "../../utils/TableUtilities"; // 1
 import moment from "moment"; // 4
+import { actions, fields } from "../../utils/TableFields"; // 1
 export default {
   name: "AdminAppointmentTitle",
   components: {
@@ -430,57 +432,48 @@ export default {
     return {
      ...
       componentName: "import-appointment-title",
-      fields: [ // 1 
+      fields:  [ // 1
+        actions,
+        fields.getId(false, true),
         {
-          key: "id",
-          label: this.$t("samples.id"),
-          sortField: "id",
-          visible: false,
-          sortable: true
+           key: "date",
+           label: this.$t("biobankDates.date"),
+           sortField: "date",
+           visible: true,
+           sortable: true,
+           formatter: (value) => {
+              return TableUtilities.formatDate(value);
+           }
         },
         {
-          key: "title",
-          label: this.$t("appointmentTitle.title"),
-          sortField: "title",
-          formatter: (value) => {
-            return TableUtilities.getBadgeLabelColor(value, "info", null);
-          },
-          visible: true,
-          sortable: true
+           key: "title",
+           label: this.$t("biobankDates.title"),
+           sortField: "title",
+           visible: true,
+           sortable: true
         },
         {
-          key: "description",
-          label: this.$t("appointmentTitle.descriptionAppointment"),
-          sortField: "description",
-          visible: true,
-          sortable: true
+           key: "remark",
+           label: this.$t("biobankDates.remark"),
+           sortField: "remark",
+           visible: true,
+           sortable: true
         },
         {
-          key: "createdAt",
-          label: this.$t("projectSubmission.services.createdAt"),
-          sortField: "createdAt",
-          formatter: (value) => {
-            return TableUtilities.formatDate(value);
-          },
-          visible: true,
-          sortable: true
+           key: "icon",
+           label: "Icon",
+           sortField: "icon",
+           formatter: (value) => {
+              return TableUtilities.getBadgeLabelColor(value, "info", value);
+           },
+           visible: true,
+           sortable: true
         },
-        {
-          key: "updatedAt",
-          label: this.$t("projectSubmission.services.updatedAt"),
-          sortField: "updatedAt",
-          formatter: (value) => {
-            return TableUtilities.formatDate(value);
-          },
-          visible: true,
-          sortable: true
-        },
-        {
-          key: "__slot:actions",
-          label: this.$t("projectSubmission.services.actions"),
-          visible: true
-        }
-      ],
+        fields.getCreatedAt(true, true),
+        fields.getUpdatedAt(true, true),
+        fields.getCreatedBy(false, true),
+        fields.getLastModifiedBy(false, true)
+     ],
       tableLoaded: false, // 3,
       csvLabels: {      // 4
           id: "id",
@@ -515,14 +508,14 @@ export default {
 ````
 
 #### Schritte
-1. Die Tabelle benötigt Felder, die das im Backend aufgerufene Object anzeigt. Die Felder sind dabei die Attribute der ``@Entity``-Class im Backend. Die Felder bestehen aus folgenden Attributen :
+1. Die Tabelle benötigt Felder, die das im Backend aufgerufene Object anzeigt. Die Felder sind dabei die Attribute der ``@Entity``-Class im Backend. Sie können über ``TableFields.js`` Standardfelder einbauen. Die Felder bestehen aus folgenden Attributen :
    1. ``key``: Attribut im Java-Object, zB Id oder description
    2. ``label``: Spaltenüberschrift im Header
    3. ``sortField``: nach welchem Attribut im Java-Object gesucht werden soll. 
    4. ``sortable``: ob das Attribut suchbar sein soll.
-   5. ``visible``: ob das Attribut in der Tabelle angezeigt werden soll. Dies kann in den Einstellungn über der Tabelle (ListSettings) ein und ausgeschaltet werden.
+   5. ``visible``: ob das Attribut in der Tabelle angezeigt werden soll. Dies kann in den Einstellungen über der Tabelle (ListSettings) ein und ausgeschaltet werden.
    6. ``formatter``: Eine Funktion, die ein Attribut anpassen kann, wird ausgeführt bevor die Spalte angezeigt wird. Zum Beispiel ein Datum umwandeln. Vorgefertigte Funktionen können in ``TableUtilities.js`` verwendet werden.
-2. Wir können die ``api`` aud den Props verwendent. Die Table Komponente erstellt die Such und Sortierparameter (`sort, per_page, page, filter`) automatisch.
+2. Wir können die ``api`` aud den Props verwendend. Die Table Komponente erstellt die Such und Sortierparameter (`sort, per_page, page, filter`) automatisch.
 3. Die Tabelle gibt ein Feedback zurück, sobald diese geladen wurde. Wir verwenden in diesem einfachen Beispiel eine Variable die darauf überprüft, ob die Tabelle fertig geladen wurde. Es kann aber auch für Charts verwendet werden.
 4. Ähnlich wie beim ``csvImport`` wird hier der CSV-Export erzeugt. Es kann abgegeben werden, welche Attribute exportiert werden sollen, und wie die Spalten heißen. **!WICHTIG!** Die Spaltennamen müssen gleich heißen, wie im Import. Siehe [3.1](#3-schritt-template-properties-für-csv-import-befüllen)
    1. ``csv-fields``: Felder innerhalb des Json-Objekts, das Sie exportieren möchten. Wenn keine Angabe gemacht wird, werden alle Eigenschaften des Json-Objekts exportiert. Verwenden Sie die Funktion, um die Daten zu filtern und nur die gewünschten Eigenschaften zu erhalten.
@@ -558,6 +551,11 @@ export default {
           :modal-infos="" 
           :needs-info="true"  <!-- 2 -->
           :needs-resource="true" <!-- 2 -->
+          :add-button-text="$tc('appointmentTitle.addButton')" <!-- 2 -->
+          :modal-view-title="$tc('appointmentTitle.viewHeader')" <!-- 2 -->
+          :modal-view-description="$tc('appointmentTitle.viewDescription')" <!-- 2 -->
+          :modal-delete-title="$tc('appointmentTitle.deleteHeader')" <!-- 2 -->
+          :modal-delete-description="$tc('appointmentTitle.deleteHeader')" <!-- 2 -->
       ></table-template>
     </div>
 ...
@@ -594,7 +592,7 @@ export default {
     return {
       ... 
        data: {}, // 1
-       viewAndDeleteModalId: this.componentName + "-view-modal",  // 1
+       viewAndDeleteModalId: "admin-appointment-title-view-modal",  // 1
        modalItems: [      // 2
         {
            key: 'id',
@@ -691,8 +689,6 @@ Da diese beiden Modals eine eigene Validierung benötigen, sollten diese Modals 
            :title="$tc('biobankDates.addHeader')"
            :description="$tc('biobankDates.addDescription')"
            :mode="mode"
-           :authorization-header="authorizationHeader"
-           token-based
            @submit-data="submit" // 2
       ></appointment-title-modal>
 </template>
@@ -714,24 +710,15 @@ export default {
     api: {          
       type: String,
       required: true
-    },
-    authorizationHeader: {   
-      type: String,
-      required: false,
-      default: null
-    },
-    tokenBased: {     
-      type: Boolean,
-      required: false,
-      default: false
     }
   },
   data() {
     return {
       ... 
        data: {},
-       viewAndDeleteModalId: this.componentName + "-view-modal",
-       addAndEditModalId: this.componentName + "-add-modal" // 1
+       componentName: "admin-appointment-title", 
+       viewAndDeleteModalId: "admin-appointment-title-view-modal",
+       addAndEditModalId: "admin-appointment-title-add-modal", // 1
      
     }
   },
@@ -762,7 +749,7 @@ export default {
    submit(data, mode) {
       this.mode = mode;
       if (this.mode === MODE.ADD) {
-         tableHttpService.postData(this.biobankDatesApi, data, this.authorizationHeader).then((response) => {
+         tableHttpService.postData(this.api, data, this.authorizationHeader).then((response) => {
             if (response.status === 201) {
                this.$bvModal.hide(this.addAndEditModalId);
                Http.successToast(this.$t("toast.created"));
@@ -771,7 +758,7 @@ export default {
          });
       }
       if (this.mode === MODE.EDIT) {
-         tableHttpService.patchData(this.biobankDatesApi, data.id, data, this.authorizationHeader).then((response) => {
+         tableHttpService.patchData(this.api, data.id, data, this.authorizationHeader).then((response) => {
             if (response.status === 200) {
                this.$bvModal.hide(this.addAndEditModalId);
                Http.successToast(this.$t("toast.updated"));
@@ -844,6 +831,11 @@ export default {
             :modal-resources="modalResources"
             :needs-info="false"
             :needs-resource="true"
+            :add-button-text="$tc('biobankDates.addButton')"
+            :modal-view-title="$tc('biobankDates.viewHeader')"
+            :modal-view-description="$tc('biobankDates.viewDescription')"
+            :modal-delete-title="$tc('biobankDates.deleteHeader')"
+            :modal-delete-description="$tc('biobankDates.deleteHeader')"
           ></table-template>
           <admin-biobank-date-modal
             modal-size="xl"
@@ -892,7 +884,7 @@ export default {
       required: true
     },
     listAppointmentTitleUrl: {
-      type: Object,
+      type: String,
       required: false
     },
     locale: {
