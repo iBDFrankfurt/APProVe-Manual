@@ -1,5 +1,7 @@
 image: docker:19.03
 
+variables:
+  REGISTRY_URL: "registry.gitlab.ibdf-frankfurt.de"
  #The services keyword defines just another Docker image that is run during your job and is linked to the Docker image that the image keyword defines.
  #This allows you to access the service image during build time.
 services:
@@ -26,9 +28,9 @@ dockerize_app:
     expire_in: 1 week
   script:
     # Login to repository and build it with tag as defined in Variables and pushes it to repository
-    - docker login -u tschneider -p 3naVg4rBZd86Adsx-G9u registry.gitlab.proskive.de
-    - docker build -t registry.gitlab.proskive.de/proskive/uct-manual-service .
-    - docker push registry.gitlab.proskive.de/proskive/uct-manual-service
+    - docker login -u tschneider -p 3naVg4rBZd86Adsx-G9u $REGISTRY_URL
+    - docker build -t $REGISTRY_URL/proskive/uct-manual-service .
+    - docker push $REGISTRY_URL/proskive/uct-manual-service
     - echo "Building public version"
-    - docker build -t registry.gitlab.proskive.de/uct/open-approve/uct-manual-service-v2:latest .
-    - docker push registry.gitlab.proskive.de/uct/open-approve/uct-manual-service-v2:latest
+    - docker build -t $REGISTRY_URL/uct/open-approve/uct-manual-service-v2:latest .
+    - docker push $REGISTRY_URL/uct/open-approve/uct-manual-service-v2:latest
