@@ -17,4 +17,4 @@ Check the Features of APProVe!
 - [Projekte umhängen](reassign.md)
 - [Projektkacheln](tiles.md)
 - [Dashboard-Links](dashboard-links.md)
-
+- [Datenschutzkonzepte](dataPrivacy.md)

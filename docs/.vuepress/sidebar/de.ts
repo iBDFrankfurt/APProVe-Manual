@@ -18,7 +18,7 @@ export const de = sidebar({
       prefix: "features/",
       link: "features/",
       collapsible: true,
-      children: ["todos", "reassign", "tiles", "dashboard-links"],
+      children: ["todos", "reassign", "tiles", "dashboard-links", "dataPrivacy"],
     },
     {
       icon: "guide",

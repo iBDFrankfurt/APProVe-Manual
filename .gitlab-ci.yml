@@ -19,7 +19,7 @@ cache:
 stages:
   - dockerize
 
-dockerize_app:
+dockerize_manual:
   image: docker:stable
   stage: dockerize
   artifacts:

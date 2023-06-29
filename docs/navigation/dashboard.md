@@ -109,3 +109,34 @@ Als Projektmanagement haben Sie einige Kacheln mehr. Darüber hinaus erhalten Si
    <p>Weitere Informationen zu den verschiedenen Kacheln in APProVe und deren Verwaltung finden Sie <a href="/administration/tiles.html">hier</a>.</p>
    <p>Über die Kachel <code>Mir zugewiesene ToDos</code> erhalten Sie eine Übersicht, über die Ihnen zugewiesenen ToDos. Näheres dazu finden Sie unter <a href="/features/todos.html">hier</a>.</p>
 
+
+## Statistiken
+APProVe bietet Ihnen ab Version 3.2.0 die Möglichkeit verschiedene Projektspezifische Statistiken direkt auf dem Dashboard anzuzeigen.
+
+<figure>
+  <div class="container">
+    <label for="Container">
+    <img :src="$withBase('/img/navigation/dashboard-statistics.png')" alt="Übersicht der Statistiken auf dem Administratoren Dashboard">
+    </label>
+      <figcaption>Übersicht der Statistiken auf dem Administratoren Dashboard</figcaption>
+  </div>
+</figure>
+
+### Projekt Timeline
+Hier haben Sie die Möglichkeit, die zuletzt erstellten oder bearbeiteten Projekte schnell einzusehen. Über die Optionen können Sie zudem festlegen, wie viele Projekte angezeigt werden sollen.
+
+### Quick Info
+In der Quick Info rechts daneben, haben sie zudem eine schnelle Übersicht über alle Projekte oder Personen im System.
+Über die Kachel ``Projekte pro Jahr`` können Sie sich zudem anzeigen lassen, wie viele Projekte in welchem Jahr den ``initialen Status`` haben. Standardmäßig ist dies der Status ``Eingereicht``, was sie aber jederzeit ändern können (siehe [Status](../management/status.md)).
+
+### Projektlaufzeiten
+Sie haben zudem die Möglichkeit, sich Projektlaufzeiten anzeigen zu lassen. Klicken Sie dazu auf ``Projektlaufzeit`` im Dashboard.
+
+<figure>
+  <div class="container">
+    <label for="Container">
+    <img :src="$withBase('/img/navigation/dashboard-statistics2.png')" alt="Übersicht über die Laufzeiten">
+    </label>
+      <figcaption>Übersicht über die Laufzeiten</figcaption>
+  </div>
+</figure>
