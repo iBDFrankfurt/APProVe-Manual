@@ -12,7 +12,7 @@ When pushing this repository, the pipeline automatically creates a docker image 
 
 # Development server:
 
-- npm run docs:dev
+- ``npm run docs:dev``
 - wait a bit, till bundle finished
 - You can view the development server at `http://localhost:443/manual/`.
 

@@ -18,3 +18,4 @@ Check the Features of APProVe!
 - [Projektkacheln](tiles.md)
 - [Dashboard-Links](dashboard-links.md)
 - [Datenschutzkonzepte](dataPrivacy.md)
+- [Erweiterte Suche](advanced-search.md)

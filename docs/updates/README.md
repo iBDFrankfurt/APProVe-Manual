@@ -8,17 +8,18 @@ category:
 ---
 
 ## Changelogs
+- [3.5.0](3-5-0.md) <Badge type="primary" text="UPCOMING" vertical="top" />
 
-- 3.4.0 <Badge type="primary" text="UPCOMING" vertical="top" />
+- [3.4.0](3-4-0.md) <Badge type="danger" text="NEW" vertical="top" />
 
-- [3.3.0](3-3-0.md)  <Badge type="danger" text="NEW" vertical="top" />
+- [3.3.0](3-3-0.md)  
 
-- [3.2.0](3-2-0.md)  
-
-- [3.1.0](3-1-0.md)  
+- [3.2.0](3-2-0.md)
 
 
 <!-- more -->
+- [3.1.0](3-1-0.md)
+
 - [3.0.2](3-0-2.md)
 
 - [3.0.1](3-0-1.md)
