@@ -51,6 +51,7 @@ Ein Projekt besteht aus verschiedenen Attributen, nach einigen können ab Versio
 - providesOwnData: Werden eigene Daten bereitgestellt
 - needsBasicData: Wurden Basisdaten angefragt
 - needsExternalData: Werden externe Daten benötigt
+- hasPublication: Hat das Projekt Publikationen
 
 
 ## Beispielabfragen
@@ -68,3 +69,4 @@ Zusätzlich funktionieren die Abfragen auch wie gewohnt ohne ``AND``.
 - ``Rückmeldung aus Zwischenbericht``: Liefert alle Projekte mit dem Status ``Rückmeldung aus Zwischenbericht``
 - ``SNO-2-*``: Alle Projekte die eine Projektnummer haben wie SNO-2-XXXX
 - ``*admin*``: Alle Projekte die von XadminX eingereicht wurden
+- ``hasPublication``: Alle Projekte die mindestens eine Publikation haben
