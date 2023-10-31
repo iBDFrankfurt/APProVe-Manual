@@ -11,7 +11,7 @@
     "docs:serve": "npm run serve"
   },
   "author": "Timo Schneider",
-  "license": "ISC",
+  "license": "Apache License Version 2.0",
   "devDependencies": {
     "@vuepress/bundler-webpack": "2.0.0-beta.63",
     "@vuepress/client": "2.0.0-beta.63",
