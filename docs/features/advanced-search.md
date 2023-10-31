@@ -33,12 +33,13 @@ copyright: false
 APProVe bietet Ihnen die Möglichkeit ab Version [3.5.0](../updates/3-5-0.md) noch feiner nach Projekten zu suchen in den jeweiligen Projektlisten und [Kacheln](tiles.md).
 Hier finden Sie eine Übersicht, wonach Sie suchen können.
 
+Die erweiterte Suche funktioniert sowohl für Projekte als auch für Personen.
 ::: tip Inhaltsangabe
 [[toc]]
 :::
 
 
-## Suchparameter
+## Suchparameter für Projekte
 Ein Projekt besteht aus verschiedenen Attributen, nach einigen können ab Version [3.5.0](../updates/3-5-0.md) gesucht werden. 
 
 - uctForm: Benutzt das Projekt die Patientenaufklärung des UCT
@@ -54,7 +55,7 @@ Ein Projekt besteht aus verschiedenen Attributen, nach einigen können ab Versio
 - hasPublication: Hat das Projekt Publikationen
 
 
-## Beispielabfragen
+## Beispielabfragen für Projekte
 Sie können Abfragen mit einem ``AND`` miteinander verknüpfen. Ein ``OR`` ist derzeit noch nicht möglich. allerdings können sie die Abfrage auch negieren.
 Nachfolgend einige Beispiele:
 - ``SHN*22 AND !needsMaterial``: Sucht alle SHN Projekte nach Projektnummer mit 2022 die kein Material beantragt haben
@@ -70,3 +71,21 @@ Zusätzlich funktionieren die Abfragen auch wie gewohnt ohne ``AND``.
 - ``SNO-2-*``: Alle Projekte die eine Projektnummer haben wie SNO-2-XXXX
 - ``*admin*``: Alle Projekte die von XadminX eingereicht wurden
 - ``hasPublication``: Alle Projekte die mindestens eine Publikation haben
+
+## Suchparameter für Personen
+Eine Person besteht aus verschiedenen Attributen, nach einigen können ab Version [3.5.0](../updates/3-5-0.md) gesucht werden.
+
+- isParticipant: Ist an einem Projekt beteiligt
+- isContactDoc: Ist als ärztlicher Kontakt angegeben
+- isContactLab: Ist als Laborkontakt angegeben
+- isLeader: Ist als Leiter angegeben
+- isSecondLeader: Ist als zweiter Leiter angegeben
+- isThirdLeader: Ist als dritter Leiter angegeben
+- isCreator: Ist Ersteller eines Projekts
+- isUpdater: Hat ein Projekt bearbeitet
+- hasAnyProject: Ist in einer der oben genannten Formen angegeben
+
+## Beispielabfragen für Personen
+Sie können Abfragen mit einem ``AND`` miteinander verknüpfen.
+
+- ``isLeader AND !isParticipant`` : Alle Personen, die ein Projekt leiten und nicht an irgendeinem Projekt beteiligt sind
