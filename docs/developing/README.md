@@ -1,13 +1,13 @@
 ---
 article: false
-title: Entwicklung
+title: Entwicklerleitfaden
 index: false
 icon: creative
 category:
 - Develop
 ---
 
-Informationen darüber, wie APProVe erweitert werden kann.
+Informationen darüber, wie APProVe individualisiert und erweitert werden kann.
 
 <!-- more -->
 
