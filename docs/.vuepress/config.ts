@@ -26,6 +26,8 @@ export default defineUserConfig({
 
       "/developing/": "structure",
 
+      "/updates/": "structure",
+
       // fallback
       "/": [
         "" /* / */,
@@ -33,7 +35,16 @@ export default defineUserConfig({
         "test" /* /test.html */,
       ],
     },
-    navbar: ["/home.md", "/developing/README.md", "/user/README.md"],
+    navbar: [ "/home.md",
+              "/developing/README.md",
+              {
+                text: "Changelogs",
+                icon: "note",
+                prefix: "/updates/",
+                link: "/updates",
+                children: ["3-4-0", "3-3-0", "3-2-0", "/updates/README.md"],
+              },
+            ],
   }),
   bundler: webpackBundler({
     configureWebpack: (config, isServer) => {
