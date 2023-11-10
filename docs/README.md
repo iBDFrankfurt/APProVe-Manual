@@ -9,7 +9,7 @@ tagline: Das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF
 heroFullScreen: false
 projects:
   - icon: project
-    name: APProVe Productive
+    name: APProVe Produktivsystem
     desc: APProve running at the iBDF in production
     link: https://approve.ibdf-frankfurt.de
 

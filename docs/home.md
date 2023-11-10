@@ -2,11 +2,11 @@
 home: true
 icon: home
 title: APProVe Manual
-heroImage: /hero_img_a.png
+heroImage: img/hero_img_a.png
 heroText: APProVe Manual
-tagline: Handbuch für APProVe - das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF
+tagline: Handbuch für APProVe - das Tool zur Antragsstellung, Projekt- und Prozessverwaltung der iBDF
 actions:
-  - text: Einführung 💡
+  - text: Einführung
     link: /introduction/
     type: primary
 

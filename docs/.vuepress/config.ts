@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { webpackBundler } from '@vuepress/bundler-webpack';
+import {hopeTheme} from "vuepress-theme-hope";
 
 export default defineUserConfig({
   base: "/manual/",
@@ -19,7 +20,20 @@ export default defineUserConfig({
     //   description: "Manual for APProVe - the tool for application, project and process management of iBDF",
     // },
   },
-  theme,
+  theme: hopeTheme({
+    sidebar: {
+      "/user/": "structure",
+
+      "/developing/": "structure",
+
+      // fallback
+      "/": [
+        "" /* / */,
+        "todo" /* /todo.html */,
+        "test" /* /test.html */,
+      ],
+    }
+  }),
   bundler: webpackBundler({
     configureWebpack: (config, isServer) => {
       config.devServer = {

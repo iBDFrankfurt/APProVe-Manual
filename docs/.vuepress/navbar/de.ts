@@ -3,6 +3,9 @@ import { navbar } from "vuepress-theme-hope";
 export const de = navbar([
   "/",
   "/home",
+  "/install",
+  "/user",
+  "/developing",
   {
     text: "Changelogs",
     icon: "note",
