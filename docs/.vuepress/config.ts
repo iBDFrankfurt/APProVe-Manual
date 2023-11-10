@@ -35,7 +35,7 @@ export default defineUserConfig({
         "test" /* /test.html */,
       ],
     },
-    navbar: [ "/README.md",
+    navbar: [ "/home.md",
               "/developing/README.md",
               "/features/README.md",
               {
