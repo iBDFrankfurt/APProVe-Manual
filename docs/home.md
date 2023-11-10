@@ -18,12 +18,12 @@ actions:
 
 features:
   - title: Benutzerdokumentation
-    icon: book-open-reader
+    icon: book-reader
     details: Informationen und Anleitungen
     link: https://backend.demo.ibdf-frankfurt.de/manual/introduction/
 
   - title: Installationsguide
-    icon: screwdriver-wrench
+    icon: tools
     details: Installation und Einrichtung auf Ihrem Server
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides
 
@@ -31,12 +31,6 @@ features:
     icon: code
     details: Informationen für Entwickler, die APProVe individualisieren oder weiterentwickeln möchten.
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/
-
-  - title: Demosystem
-    icon: desktop
-    details: Holen Sie sich Zugang und testen Sie unser Demosystem aus!
-    link: https://demo.ibdf-frankfurt.de/
-
 
 copyright: false
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
