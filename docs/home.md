@@ -18,18 +18,18 @@ actions:
 
 features:
   - title: Benutzerdokumentation
-    icon: book-reader
+    icon: book
     details: Informationen und Anleitungen
     link: https://backend.demo.ibdf-frankfurt.de/manual/introduction/
 
-  - title: Installationsguide
-    icon: tools
+  - title: Installationsleitfaden
+    icon: tool
     details: Installation und Einrichtung auf Ihrem Server
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides
 
   - title: Entwicklerdokumentation
     icon: code
-    details: Informationen für Entwickler, die APProVe individualisieren oder weiterentwickeln möchten.
+    details: APProVe individualisieren oder weiterentwickeln
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/
 
 copyright: false
