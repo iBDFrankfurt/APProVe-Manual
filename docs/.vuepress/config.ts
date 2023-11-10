@@ -32,7 +32,8 @@ export default defineUserConfig({
         "todo" /* /todo.html */,
         "test" /* /test.html */,
       ],
-    }
+    },
+    navbar: ["/home.md", "/developing/README.md", "/user/README.md"],
   }),
   bundler: webpackBundler({
     configureWebpack: (config, isServer) => {
