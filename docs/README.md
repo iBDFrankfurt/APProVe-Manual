@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: APProVe
-heroImage: img/hero_img_a.png
+heroImage: /logo.svg
 heroText: APProVe
 tagline: Das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF
 heroFullScreen: false
@@ -33,20 +33,20 @@ projects:
     desc: Detailed description of the book
     link: https://wiki.ibdf-frankfurt.de/wiki/Hauptseite
 
-  - title: Benutzer
-    icon: read
-    details: Informationen und Anleitungen
-    link: https://backend.demo.ibdf-frankfurt.de/manual/introduction/
+  - icon: article
+    name: article name
+    desc: Detailed description of the article
+    link: https://link.to.your.article
 
-  - title: Installationsleitfaden
-    icon: tool
-    details: Installation und Einrichtung auf Ihrem Server
-    link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides
+  - icon: friend
+    name: friend name
+    desc: Detailed description of friend
+    link: https://link.to.your.friend
 
-  - title: Entwickler
-    icon: code
-    details: APProVe individualisieren oder weiterentwickeln
-    link: https://vuepress-theme-hope.github.io/v2/guide/layout/
+  - icon: /logo.svg
+    name: custom item
+    desc: Detailed description of this custom item
+    link: https://link.to.your.friend
 
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 ---
