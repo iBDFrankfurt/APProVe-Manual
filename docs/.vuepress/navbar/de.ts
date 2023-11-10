@@ -1,15 +1,16 @@
 import { navbar } from "vuepress-theme-hope";
 
 export const de = navbar([
-  "/README.md",
-  "/install/README.md",
-  "/user/README.md",
-  "/developing/README.md",
+  "/",
+  "/home",
+  "/install",
+  "/user",
+  "/developing",
   {
     text: "Changelogs",
     icon: "note",
     prefix: "/updates/",
     link: "/updates",
-    children: ["3-4-0", "3-3-0", "3-2-0", ""],
+    children: ["3-4-0", "3-3-0", "3-2-0"],
   },
 ]);
