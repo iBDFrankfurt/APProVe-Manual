@@ -28,14 +28,9 @@ export default defineUserConfig({
 
       "/updates/": "structure",
 
-      // fallback
-      "/": [
-        "" /* / */,
-        "todo" /* /todo.html */,
-        "test" /* /test.html */,
-      ],
     },
-    navbar: [ "/",
+    navbar: [ "/README.md",
+              "/install/README.md",
               "/user/README.md",
               "/developing/README.md",
               {
