@@ -29,7 +29,7 @@ export default defineUserConfig({
       "/updates/": "structure",
 
     },
-    navbar: [ "/README.md",
+    navbar: [ "/home.md",
               "/install/README.md",
               "/user/README.md",
               "/developing/README.md",
