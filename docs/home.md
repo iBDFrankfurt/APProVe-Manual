@@ -13,101 +13,37 @@ actions:
   - text: Blog homepage 🏠
     link: /
 
-  - text: Changelogs
+  - text: Changelogs 
     link: /updates/
 
 features:
-  - title: Markdown Enhance
-    icon: markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in markdown
-    link: https://vuepress-theme-hope.github.io/v2/guide/markdown/
+  - title: Benutzerdokumentation
+    icon: book-open-reader
+    details: Informationen und Anleitungen
+    link: https://backend.demo.ibdf-frankfurt.de/manual/introduction/
 
-  - title: Slide page
-    icon: slides
-    details: Adding slide pages to display things you like
+  - title: Installationsguide
+    icon: screwdriver-wrench
+    details: Installation und Einrichtung auf Ihrem Server
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/slides
 
-  - title: Layout enhancement
-    icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
+  - title: Entwicklerdokumentation
+    icon: code
+    details: Informationen für Entwickler, die APProVe individualisieren oder weiterentwickeln möchten.
     link: https://vuepress-theme-hope.github.io/v2/guide/layout/
 
-  - title: Pageviews and comments
-    icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/comment.html
+  - title: Demosystem
+    icon: desktop
+    details: Holen Sie sich Zugang und testen Sie unser Demosystem aus!
+    link: https://demo.ibdf-frankfurt.de/
 
-  - title: Article information
-    icon: info
-    details: Add author, writing date, reading time, word count and other information to your article
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/page-info.html
-
-  - title: Blog support
-    icon: blog
-    details: Listing your articles with their dates, tags and categories with some awesome layouts
-    link: https://vuepress-theme-hope.github.io/v2/guide/blog/
-
-  - title: Custom theme color
-    icon: palette
-    details: Supports custom theme colors and allows users to switch between preset theme colors
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/theme-color.html
-
-  - title: Dark Mode
-    icon: contrast
-    details: Switch between light and dark modes freely
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/darkmode.html
-
-  - title: Full A11y support
-    icon: support
-    details: Full support of accessibility in your site
-    link: https://vuepress-theme-hope.github.io/v2/guide/interface/accessibility.html
-
-  - title: Article Encryption
-    icon: lock
-    details: Encrypt you articles based on page links, so that only the one you want could see them
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/encrypt.html
-
-  - title: Copy button
-    icon: copy
-    details: Copy codes with one click in code blocks
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/copy-code.html
-
-  - title: Image preview
-    icon: pic
-    details: Support viewing, zooming, sharing your page images like a gallery
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/photo-swipe.html
-
-  - title: SEO enhancement
-    icon: config
-    details: Optimize pages for search engines
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/seo.html
-
-  - title: Sitemap
-    icon: sitemap
-    details: Generate a Sitemap for your site
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/sitemap.html
-
-  - title: Feed support
-    icon: rss
-    details: Generate feed to allow users to subscribe it
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/feed.html
-
-  - title: PWA support
-    icon: mobile
-    details: Make your site more like an APP
-    link: https://vuepress-theme-hope.github.io/v2/guide/advanced/pwa.html
-
-  - title: More new features
-    icon: more
-    details: Including icon support, fullscreen button, etc.
-    link: https://vuepress-theme-hope.github.io/v2/guide/feature/
 
 copyright: false
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 ---
 
-This is an example of a project homepage. You can place your main content here.
+Als Wissenschaftler*in können Sie über die Software APProVe Bioproben und klinische Daten für Ihre Forschungsvorhaben bei Ihrer lokalen Biobank beantragen. Sie erhalten eine kompakte Zusammenfassung Ihrer Anträge und deren aktuellen Status während des Bewilligungsprozesses und der Proben- und Datenbereitstellung.
 
-To use this layout, you need to set `home: true` in the page front matter.
+Schauen Sie sich auf unserem [Demosystem](https://demo.ibdf-frankfurt.de/) um.
 
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://vuepress-theme-hope.github.io/v2/guide/layout/home/).
+TODO TEXT UND BILDER UND BLA BLA
