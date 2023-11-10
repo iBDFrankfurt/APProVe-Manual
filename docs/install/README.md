@@ -7,7 +7,7 @@ category:
 - Install
 ---
 
-Informationen darüber, wie APProVe installiert werden kann.
+Informationen darüber, wie APProVe installiert und eingerichtet werden kann.
 
 <!-- more -->
 
