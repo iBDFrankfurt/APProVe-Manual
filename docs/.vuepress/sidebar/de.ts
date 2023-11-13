@@ -4,6 +4,7 @@ export const de = sidebar({
   "/": [
     "",
     "home",
+
     {
       icon: "any",
       text: "Einführung",

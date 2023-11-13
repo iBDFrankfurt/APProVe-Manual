@@ -20,28 +20,7 @@ export default defineUserConfig({
     //   description: "Manual for APProVe - the tool for application, project and process management of iBDF",
     // },
   },
-  theme: hopeTheme({
-    sidebar: {
-      "/user/": "structure",
-
-      "/developing/": "structure",
-
-      "/updates/": "structure",
-
-    },
-    navbar: [ "/home.md",
-              "/install/README.md",
-              "/user/README.md",
-              "/developing/README.md",
-              {
-                text: "Changelogs",
-                icon: "note",
-                prefix: "/updates/",
-                link: "/updates",
-                children: ["3-4-0", "3-3-0", "3-2-0", ""],
-              },
-            ],
-  }),
+  theme,
   bundler: webpackBundler({
     configureWebpack: (config, isServer) => {
       config.devServer = {
