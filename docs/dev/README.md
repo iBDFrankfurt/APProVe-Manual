@@ -2,7 +2,7 @@
 article: false
 title: Entwicklerleitfaden
 index: false
-icon: creative
+icon: code
 category:
 - Develop
 ---

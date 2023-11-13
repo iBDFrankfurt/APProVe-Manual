@@ -1,10 +1,40 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const de = sidebar({
+  "/install/": [
+    {
+      icon: "enum",
+      text: "Systemvorraussetzungen",
+      prefix: "requirements/",
+      link: "requirements/",
+      collapsible: true,
+      //children: ["introduction", "architecture", "quick-guide"],
+    },
+    {
+      icon: "shell",
+      text: "Installation",
+      prefix: "install/",
+      link: "install/",
+      collapsible: true,
+      //children: ["introduction", "architecture", "quick-guide"],
+    },
+    {
+      icon: "style",
+      text: "Einrichtung & Inbetriebnahme",
+      prefix: "setup/",
+      link: "setup/",
+      collapsible: true,
+      //children: ["introduction", "architecture", "quick-guide"],
+    },
+  ],
+
+  //"/user/": "structure",
+
+  "/developing/": "structure",
+
+  "/updates/": "structure",
   "/": [
     "",
-    "home",
-
     {
       icon: "any",
       text: "Einführung",
@@ -48,8 +78,8 @@ export const de = sidebar({
     {
       text: "Entwicklung",
       icon: "config",
-      prefix: "developing/",
-      link: "developing/",
+      prefix: "dev/",
+      link: "dev/",
       collapsible: true,
       children: ["vuejs"],
     },

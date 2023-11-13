@@ -2,7 +2,7 @@
 article: false
 title: Benutzerleitfaden
 index: false
-icon: creative
+icon: read
 category:
 - User
 ---
