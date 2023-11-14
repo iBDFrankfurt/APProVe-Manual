@@ -4,7 +4,7 @@ export const de = sidebar({
   "/install/": [
     {
       icon: "enum",
-      text: "Systemvorraussetzungen",
+      text: "Systemvoraussetzungen",
       prefix: "requirements/",
       link: "requirements/",
       collapsible: true,

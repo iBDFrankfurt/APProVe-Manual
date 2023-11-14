@@ -1,16 +1,20 @@
 ---
 article: false
-title: Installation
+title: Installationsleitfaden
 index: false
 icon: shell
 category:
 - Install
 ---
 
-Informationen darüber, wie APProVe installiert und eingerichtet werden kann.
+Hier finden Sie Anleitungen zur [Installation](install.md), [Einrichtung & Inbetriebnahme](setup.md) von APProVe auf Ihrem Server sowie die technischen Voraussetzungen.
+Für eine komfortablere Installation stehen Skripte bereit, die in den folgenden Kapiteln näher erläutert werden.
+Bitte vergewissern Sie sich darüber, dass Ihr Zielsystem alle [Voraussetzungen](requirement.md) für den Betrieb von APProVe erfüllt.
 
-<!-- more -->
+# Überblick
 
-## Services
+- [Systemvoraussetzungen](requirement.md)
 
+- [Installation](install.md)
 
+- [Einrichtung & Inbetriebnahme](setup.md)
