@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Realms & Rollen
+title: Grundlagen
 # This control sidebar order
 order: 3
 # Set author

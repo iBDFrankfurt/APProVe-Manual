@@ -48,8 +48,8 @@ export const de = sidebar({
     {
       icon: "article",
       text: "Realms und Rollen",
-      prefix: "projects/",
-      link: "projects/",
+      prefix: "realms-roles/",
+      link: "realms-roles/",
       collapsible: true,
       children: ["basics", "realm-management"],
     },

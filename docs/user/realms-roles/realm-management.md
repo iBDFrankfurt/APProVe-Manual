@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Realms & Rollen
+title: Realm-Verwaltung
 # This control sidebar order
 order: 2
 # Set author
