@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Einführung
+title: Realms und Rollen
 # This is the icon of the page
 icon: any
 # This control sidebar order
@@ -32,6 +32,6 @@ article: false
 
 - [Einführung](introduction.md)
 
-- [Architektur](docs/dev/architecture.md)
+- [Architektur](architecture.md)
 
 - [Inbetriebnahme](quick-guide.md)

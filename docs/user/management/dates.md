@@ -1,20 +1,18 @@
 ---
 # This is the title of the article
-title: Einführung
-# This is the icon of the page
-icon: any
+title: Termine
 # This control sidebar order
-order: 1
+order: 3
 # Set author
 author: Timo Schneider
 # Set writing time
-date: 2022-07-20
+date: 2022-08-09
 # A page can have multiple categories
 category:
-- Introduction
+- Administration
 # A page can have multiple tags
 tag:
-- Introduction
+- Services
 # this page is sticky in article list
 sticky: false
 # this page will appear in starred articles
@@ -24,14 +22,14 @@ footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankf
 # You can customize copyright content
 copyright: false
 toc: false
-article: false
 ---
 
-## Introduction
+Termine werden sowohl auf der Startseite als auch auf dem Dashboard der Wissenschaftler angezeigt.
 
+<!-- more -->
 
-- [Einführung](introduction.md)
+## Termine
+WIP
 
-- [Architektur](docs/dev/architecture.md)
-
-- [Inbetriebnahme](quick-guide.md)
+## Termintitel
+WIP

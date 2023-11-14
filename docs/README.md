@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: APProVe
+title: Home
 heroImage: /hero_img_a.png
 heroText: APProVe
 tagline: Das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF

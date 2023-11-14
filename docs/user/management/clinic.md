@@ -1,20 +1,20 @@
 ---
 # This is the title of the article
-title: Einführung
+title: Kliniken
 # This is the icon of the page
-icon: any
+
 # This control sidebar order
-order: 1
+order: 0
 # Set author
 author: Timo Schneider
 # Set writing time
-date: 2022-07-20
+date: 2022-10-17
 # A page can have multiple categories
 category:
-- Introduction
+- Administration
 # A page can have multiple tags
 tag:
-- Introduction
+- Klinik
 # this page is sticky in article list
 sticky: false
 # this page will appear in starred articles
@@ -23,15 +23,20 @@ star: false
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 # You can customize copyright content
 copyright: false
-toc: false
-article: false
 ---
 
-## Introduction
+
+<!-- more -->
+::: tip Inhaltsangabe
+[[toc]]
+:::
 
 
-- [Einführung](introduction.md)
+## Übersicht über die Kliniken in APProVe
+Um die Personenübersicht aufzurufen, navigieren Sie unter ``Menü -> Verwaltung -> Personen & Kliniken`` zur gewünschten Stelle.
 
-- [Architektur](docs/dev/architecture.md)
 
-- [Inbetriebnahme](quick-guide.md)
+
+## Klinik hinzufügen
+Möchten Sie eine Person hinzufügen, müssen Sie auf den Button ``+ Klinik hinzufügen`` klicken.
+Anschließend öffnet sich ein neues Fenster, in dem Sie die Klinikdaten eingeben können.

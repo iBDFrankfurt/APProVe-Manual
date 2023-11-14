@@ -28,9 +28,68 @@ export const de = sidebar({
     },
   ],
 
-  //"/user/": "structure",
+  "/user/": [
+    {
+      icon: "article",
+      text: "Grundlagen",
+      prefix: "introduction/",
+      link: "introduction/",
+      collapsible: true,
+      children: ["features", "approve-ui"],
+    },
+    {
+      icon: "article",
+      text: "Projekte",
+      prefix: "projects/",
+      link: "projects/",
+      collapsible: true,
+      children: ["basics", "create-project", "search-project", "edit-project", "data-privacy"],
+    },
+    {
+      icon: "article",
+      text: "Realms und Rollen",
+      prefix: "projects/",
+      link: "projects/",
+      collapsible: true,
+      children: ["basics", "realm-management"],
+    },
+    {
+      icon: "article",
+      text: "Verwaltung",
+      prefix: "management/",
+      link: "management/",
+      collapsible: true,
+      children: ["dates", "material-sample-types", "container-units", "biosample", "status", "persons", "clinic", "mainFocus", "inquiry", "services", "tags", "tiles", "todo", "publication", "patientData"]
+    },
+    {
+      icon: "article",
+      text: "Einstellungen",
+      prefix: "settings/",
+      link: "settings/",
+      collapsible: true,
+      children: ["features"],
 
-  "/developing/": "structure",
+    },
+  ],
+
+  "/dev/": [
+    {
+      icon: "article",
+      text: "Architektur",
+      prefix: "architecture/",
+      link: "architecture/",
+      collapsible: true,
+      //children: ["features", "approve-ui"],
+    },
+    {
+      icon: "article",
+      text: "VueJS Frontend anpassen",
+      prefix: "vuejs/",
+      link: "vuejs/",
+      collapsible: true,
+      //children: ["basics", "create-project", "search-project", "edit-project", "data-privacy"],
+    }
+  ],
 
   "/updates/": "structure",
   "/": [
