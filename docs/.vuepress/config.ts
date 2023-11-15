@@ -10,7 +10,7 @@ export default defineUserConfig({
   port: 443,
   locales: {
     "/": {
-      lang: "de-AT",
+      lang: "de-DE",
       title: "APProVe",
       description: "Handbuch für APProVe - das Tool zur Antragsstellung, Projekt- und ProzessVerwaltung der iBDF",
     },

@@ -31,7 +31,7 @@ export const de = sidebar({
   "/user/": [
     {
       icon: "article",
-      text: "Grundlagen",
+      text: "Einführung",
       prefix: "introduction/",
       link: "introduction/",
       collapsible: true,

@@ -13,7 +13,7 @@ Dieser Leitfaden richtet sich an alle, die sich mit der Benutzung von APProVe be
 
 ## Überblick
 
-- [Grundlagen](introduction/README.md)
+- [Einführung](introduction/README.md)
 - [Projekte](projects/README.md)
 - [Realms und Rollen](realms-roles/README.md)
 - [Verwaltung](management/README.md)
