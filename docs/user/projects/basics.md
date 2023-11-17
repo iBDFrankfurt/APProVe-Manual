@@ -70,5 +70,4 @@ Die verlinkten Elemente sind Listen, die Sie selbst als Projektmanager veränder
   </li>
 </ol>
 
-## Workflow eines Projektes
-WIP
+

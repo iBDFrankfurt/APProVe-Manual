@@ -24,6 +24,11 @@ copyright: false
 toc: false
 ---
 
+APProVe bedient derzeit primär zwei Benutzergruppen. Eine Gruppe bilden die **Wissenschaftler**, die Ihre Projektanträge über APProVe einreichen und jederzeit den Status des dazugehörigen Bewilligungsprozesses einsehen können. 
+Die zweite Benutzergruppe sind die **Projektmanager**, die unter anderem alle Projekte verwalten, ihren Status setzen und Konfigurationen am Einreichungsprozess (z. B. angebotene Probenarten oder Patientendaten) vornehmen können. 
+Im Folgenden wird ein Überblick über die Oberfläche und ihren Navigationselementen für beide Benutzergruppen gegeben.
+
+
 ## Oberfläche für Wissenschaftler
 Als Wissenschaftler erhalten Sie eine detailliertere Übersicht, um schnell auf die wichtigsten Dinge zugreifen zu können.
 <br/>

@@ -27,11 +27,5 @@ toc: false
 article: false
 ---
 
-## Introduction
-
-
-- [Einführung](introduction.md)
-
-- [Architektur](architecture.md)
-
-- [Inbetriebnahme](quick-guide.md)
+Die Sichtbarkeit einzelner APProVe-Projekte kann mithilfe von Realms und Rollen reguliert werden.
+TODO

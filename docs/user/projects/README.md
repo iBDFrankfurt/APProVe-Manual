@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Grundlagen
+title: Projekte
 # This is the icon of the page
 icon: any
 # This control sidebar order
@@ -27,11 +27,14 @@ toc: false
 article: false
 ---
 
-## Überblick
+Projekte bilden das Herzstück von APProVe. Alle Funktionalitäten sind an den Einreichungsprozess geknüpft. 
+In diesem Kapitel werden alle zu einem Projekt gehörende Komponenten vorgestellt und näher geschildert.
 
-
-- [Einführung](introduction.md)
-
-- [Architektur](architecture.md)
-
-- [Inbetriebnahme](quick-guide.md)
+<figure>
+  <div class="container">
+    <label for="Container">
+    <img :src="$withBase('/img/project/project_status.png')" alt="APProVe Projektstatus">
+    </label>
+      <figcaption>Ein APPRoVe-Projekt</figcaption>
+  </div>
+</figure>

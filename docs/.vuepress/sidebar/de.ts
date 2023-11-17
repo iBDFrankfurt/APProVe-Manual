@@ -43,7 +43,7 @@ export const de = sidebar({
       prefix: "projects/",
       link: "projects/",
       collapsible: true,
-      children: ["basics", "create-project", "search-project", "edit-project", "data-privacy"],
+      children: ["basics", "create-project", "project-workflow", "search-project", "edit-project", "data-privacy"],
     },
     {
       icon: "article",
@@ -67,7 +67,7 @@ export const de = sidebar({
       prefix: "settings/",
       link: "settings/",
       collapsible: true,
-      children: ["features"],
+      children: ["overview"],
 
     },
   ],

@@ -25,7 +25,7 @@ projects:
 
   - icon: link
     name: iBDF
-    desc: Zur Interdisciplinary Biobank and Database Frankfurt
+    desc: Interdisciplinary Biobank and Database Frankfurt
     link: https://www.uct-frankfurt.de/ibdf.html
 
   - icon: book

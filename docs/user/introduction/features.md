@@ -13,6 +13,7 @@ category:
 # A page can have multiple tags
 tag:
 - Introduction
+- Features
 # this page is sticky in article list
 sticky: false
 # this page will appear in starred articles
@@ -24,22 +25,14 @@ copyright: false
 toc: false
 ---
 
-# Einführung
+## Digitalisierte Projektanträge
+Reichen Sie ganz bequem Ihren Projekteintrag online ein. Die APProVe-Benutzeroberfläche unterstützt Sie beim Ausfüllen Ihres Projektantrages und weist Sie auf mögliche Pflichtangaben hin.
 
-::: tip Inhaltsangabe
-[[toc]]
-:::
+## Transparente Prozesse
+Haben Sie in Echtzeit stets den Zwischenstand Ihres Projektantrages im Blick. Sie können sich jederzeit einloggen, Ihr Projekt einsehen und aufkommende Rückfragen über die Kommentarfunktion klären.
 
-## APProVe - Eine Software zur Verwaltung von Projektanträgen in der Biobank
-Bei APProVe handelt es sich um eine microservicebasierte Softwarelösung, die für die interdisziplinäre Biomaterial- und Datenbank Frankfurt (iBDF) am Universitätsklinikum Frankfurt (UKF) entwickelt wurde. Die iBDF sammelt, lagert und verwaltet Bioproben (z.B. Gewebeproben, Blut, Urin oder andere Flüssigkeiten und deren Derivate) die im Rahmen der Behandlung der Patienten am UKF als Restmaterialien übrig bleiben und anderenfalls vernichtet werden würden. Diese Proben werden interessierten Wissenschaftlern für klar definierte und bewilligte Forschungsvorhaben zur Verfügung gestellt. APProVe (Antragsstellung, Projekt- und ProzessVerwaltung der iBDF) unterstützt dabei den Beantragungsprozess von Bioproben und assoziierten klinschen Daten für Forschungszwecke und stellt diesen für das Projektmanagement der Biobank und den Forschenden transparent dar. Die zentrale Funktion von APProVe im Beantragungsprozess der iBDF ist in der folgenden Abbildung dargestellt.
 
-<figure>
-  <div class="container">
-    <label for="Container">
-    <img :src="$withBase('/img/architecture/Project_management_APProVe_en.png')" alt="APProVe Prozess">
-    </label>
-      <figcaption>APProVe Prozess</figcaption>
-  </div>
-</figure>
-
-Interessierte Wissenschaftler reichen Projektanträge online über APProVe ein und definieren hier ihre Forschungsfrage sowie die benötigten Bioproben und klinischen Daten. Nach Prüfung des Antrags durch das Projektmanagement der Biobank, erfolgt die Weiterleitung an das Scientific Board. Dieses Gremium aus Vertretern des Forschungsschwerpunkts sowie der Daten und Proben liefernden Abteilungen berät über die eingereichten Anträge und gibt diese bei Bewilligung zur Weitergabe an die lokale Ethikkommission frei. Liegt ein projektspezifisches positives Votum der Ethikommission vor, kann das Projekt beginnen und das gewünschte Bioproben und klinschen Daten werden von der Biobank bereitgestellt. Alle im Rahmen der Projektbewilligung durchlaufenen Prozessschritte werden in APProVe transparent visualisiert. Daher bietet die Software nicht nur eine vereinfachte Einreichung von Projektanträgen, sondern auch eine Übersicht über den Status aller Projektanträge in Echtzeit. Dies ermöglicht eine transparente und benutzerfreundliche Antragsverwaltung für alle Beteiligten und ersetzt in der iBDF die unübersichtliche in arbeitsintensive papierbasierte Beantragung und Bewilligung von Projektanträgen.
+## Flexibel konfigurierbar
+Als Projektmanager können Sie die Form des Projektantrages flexibel gestalten. So ist es beispielweise möglich, 
+Probenarten und Patientendaten selbst zu definieren und an die Bedingungen Ihrer Forschungsumgebung anzupassen. 
+Auch die Status, die ein Projekt durchläuft, können sie frei konfigurieren.
