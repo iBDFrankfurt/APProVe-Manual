@@ -118,8 +118,8 @@ Die nachfolgende Abbildung zeigt das Datenbankmodell von APProVe. Sie können da
 <figure>
   <div class="container">
     <label for="Entity">
-       <img :src="$withBase('/img/architecture/database.png')" alt="Entity-Relationship Diagramm von APProVe">
+       <img :src="$withBase('/img/architecture/database.png')" alt="Datenbankmodell von APProVe">
     </label>
-      <figcaption>Entity-Relationship Diagramm von APProVe</figcaption>
+      <figcaption>Datenbankmodell von APProVe</figcaption>
   </div>
 </figure>

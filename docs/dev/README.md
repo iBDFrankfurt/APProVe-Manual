@@ -19,7 +19,6 @@ Dieser Guide ist derzeit noch in Arbeit. Wir bitten um Ihr Verständnis.
 - [Einführung](introduction.md)
 - [Architektur](architecture.md)
 - [Datenbank](database.md)
-- [VueJS-Frontend](vuejs.md)
 
 ## Services
 APProVe wurde als Microservice-Architektur umgesetzt und besteht aus folgenden Komponenten:

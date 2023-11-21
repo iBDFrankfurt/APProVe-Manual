@@ -79,7 +79,6 @@ export const de = sidebar({
       prefix: "introduction/",
       link: "introduction/",
       collapsible: true,
-      //children: ["features", "approve-ui"],
     },
     {
       icon: "article",
@@ -97,11 +96,11 @@ export const de = sidebar({
     },
     {
       icon: "article",
-      text: "VueJS Frontend anpassen",
-      prefix: "vuejs/",
-      link: "vuejs/",
+      text: "Beteiligung",
+      prefix: "contributing/",
+      link: "contributing/",
       collapsible: true,
-      //children: ["basics", "create-project", "search-project", "edit-project", "data-privacy"],
+      children: ["vuejs", "entity", "create-new-entity"],
     }
   ],
 
