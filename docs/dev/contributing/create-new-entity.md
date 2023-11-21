@@ -8,6 +8,7 @@ tags:
   - entity
 category:
 - contribution
+toc: false
 ---
 
 You can add new Domain/Entity-Objects or alter the ones present. It really depends on what you want to do, so the following is more like a FAQ.
@@ -22,12 +23,12 @@ Also, please refer to this in the APProVe context: [Entities](entity.md)
 [[toc]]
 :::
 
-## Creating a new Domain/entity-Object
+# Creating a new Domain/entity-Object
 Say we want to add a new property which is dependent of our Project.class. How can we do that?
 For example, we want to add a new Object named Annotation.
 With this we could annotate a Project. The first step would be to add a migration.
 
-### Adding a new migration
+## Adding a new migration
 We will write a new sql-File in the **\src\main\resources\db\migration** Folder. One convention we took was to add only one job per migration.
 This is easier to debug later and understand the versioning of the database.
 The following could be the table.
@@ -50,7 +51,7 @@ $ mvn flyway:migrate
 ```
 This will add the migration to the database and add the new table **annotation**.
 
-### Altering a migration
+## Altering a migration
 Let's say we do not want to add a new table. We could also alter the project table and add a **annotation**.
 This doesn't make that much sense, because a project could have only one annotation, but for the sake of
 completion, we look at a possible migration.
@@ -68,7 +69,7 @@ $ mvn flyway:migrate
 After adding or altering a table, we have to add an entity object. This way Spring Boot connects
 a database table with an actual object.
 
-### Adding an entity object
+## Adding an entity object
 Adding a new entity is fairly easy. The folder **entity** has all present entities.
 The first thing should be adding the **@Entity** annotation telling Spring Boot this is a database object.
 
@@ -129,7 +130,7 @@ With this addition, we can view every annotation a project has.
 If you want to learn more about relations you can check [Baeldung](https://www.baeldung.com), for example
 [OneToOne](https://www.baeldung.com/jpa-one-to-one).
 
-#### Additional Annotations
+## Additional Annotations
 If you look at other created Entities you will come across multiple different annotations. Here we will explain a few more.
 
 - @JsonView: A JsonView can customize the JSON output to serialize/deserialize objects. [More](https://www.baeldung.com/jackson-json-view-annotation)
@@ -138,7 +139,7 @@ If you look at other created Entities you will come across multiple different an
 - @JoinTable: Bidirectional; tables join two primary keys.
 - @OrderColumn: annotation specifies a column that should maintain the persistent order of a list.[More](https://docs.jboss.org/hibernate/jpa/2.1/api/javax/persistence/OrderColumn.html)
 
-### Creating the Repository
+## Creating the Repository
 After creating a **migration** for the database and the linkage to the **entity** we have to tell Spring Boot how to retrieve the Objects from the database and serialize them.
 We can do this with repositories in Spring Boot using the [Spring Boot Flow Architecture](https://www.javatpoint.com/spring-boot-architecture).
 Head over to the /repository folder to create a new **repository**:
@@ -154,7 +155,7 @@ public interface AnnotationRepository extends JpaRepository<BiobankDate, UUID>, 
 We have to extend our Repository from JpaRepository (basic CRUD methods like create or delete) and, if you want a pagination, from PagingAndSortingRepository.
 This would work with saving, updating, listing or deleting. So at this point we are already done.
 
-### Creating the Service
+## Creating the Service
 After creating the **repository** to retrieve or update your Entity from the database, we have to create a **@Service** telling Spring Boot were to put the business logic.
 It also performs **authorization** and **validation**.
 In our case we shifted the authorization to the @Controller, but more about this later.
@@ -202,7 +203,7 @@ public Annotation findOne(UUID id) {
 
 ````
 
-### Creating the RestController
+## Creating the RestController
 Everything we did before, was to retrieve Data we specified from the database and serialize it into an entity. But what if we need to retrieve this data from another microservice like the frontend?
 
 We simply create a @RestController in /controller/entity like this:
@@ -228,7 +229,7 @@ public class RestAnnotationController {
 ````
 You can choose to create and implement an interface for the service.
 
-#### Retrieve an Object from the Database
+## Retrieve an Object from the Database
 After that we want to use our **findOne** Method from the *@Service** in our @RestController to retrieve the data from the database, serialize it into json and use it
 in another microservice.
 
@@ -242,7 +243,7 @@ in another microservice.
   }
 ````
 
-#### Create an Object via Rest
+## Create an Object via Rest
 Not only can we retrieve data through our RestController -> Service -> Repository, we can also store new data with it.
 
 ````java
@@ -294,7 +295,7 @@ Spring will create this object and create an id itself. If you would retrieve th
 Please notice that Spring Boot will deserialize the project as object because we linked it in the entity! This could lead to circular dependencies, so always double-check your json and
 annotate it with a View or @JsonIgnoreProperties
 
-#### Update an Object via Rest
+## Update an Object via Rest
 To update an object via our API we first have to find our object in the database, change it and then save it again.
 We do this much like the [create](#create-an-object-via-rest) method.
 
@@ -326,6 +327,6 @@ Because we do not want to save a new Annotation we have to update our annotation
 new object through the @RequestBody and update everything, because we never know, what changed.
 
 
-## APProVe Domain DTO
+# APProVe Domain DTO
 In order to display data by the backend in the uct-frontend-service you have to add all new entity changes in the APProVe Domain DTO!
 See more at [APProVe Domain DTO](https://gitlab.ibdf-frankfurt.de/uct/proskive-dto)
