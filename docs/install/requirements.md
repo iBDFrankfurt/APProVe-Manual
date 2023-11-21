@@ -30,9 +30,11 @@ Das Zielsystem muss folgende Anforderungen erfüllen, um einen reibungslosen Bet
 
 - RAM 6GB
 - Multi-core processor (e.g. Intel i5)
-- 500 MB hard disk space
+- 500 MB hard disk space (depends on how many projects should be stored and if those have many documents to upload)
 - NGINX
 - SSL Certificate or Certbot
 - 1 Domain
-- 3 Subdomains (it can run on 1 basically, but it will require knowhow how to run Keycloak on a subdomain and manual configuration)
+- 3 Subdomains for Frontend, Backend, Keycloak (it can basically run on one, but it will require knowhow how to run Keycloak on a subdomain)
 - sudo or root rights on server
+- git
+- docker and docker-compose

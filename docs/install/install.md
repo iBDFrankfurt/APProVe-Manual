@@ -71,7 +71,7 @@ Password: adminpass
 ## APProVe Installation
 To set up APProVe on your server, follow these steps:
 
-1. Begin by downloading this repository or manually transferring the following files to your server:
+1. Begin by downloading this [repository on gitlab](https://gitlab.ibdf-frankfurt.de/uct/open-approve) or this [repository on github](https://github.com/iBDFrankfurt/APProVe) manually transferring the following files to your server:
 
 - .env.tmp
 - docker-compose.yml
@@ -103,6 +103,6 @@ In case you wish to create manual backups of the databases, please be aware that
 To simplify the backup process, we have developed a script named ``backup.sh.`` Be sure to adjust the script's variables to align with the settings in your ``.env`` file.
 
 
-## Abschließende Schritte
-Bevor APProVe in Betrieb genommen werden kann, müssen weitere Schritte nach der Installation erfolgen. 
-Diese werden im nachfolgenden [Kapitel: Einrichtung & Inbetriebnahme](https://backend.demo.ibdf-frankfurt.de/manual/install/setup.html) näher erläutert.
+## System Setup
+Before APProVe can be put into operation, further steps must be taken after installation.
+These are explained in more detail in the following [Chapter: Setup & commissioning](setup.md).
