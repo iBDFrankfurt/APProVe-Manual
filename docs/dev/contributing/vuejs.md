@@ -33,6 +33,7 @@ Diese Übersicht soll erläutern, wie neue Komponenten oder Seiten in APProVe er
 ::: tip Inhaltsangabe
 [[toc]]
 :::
+
 # Aufbau einer VueJs-Datei
 VueJs-Dateien sind grundsätzlich immer so aufgebaut:
 

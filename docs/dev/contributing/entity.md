@@ -10,6 +10,10 @@ category:
 - contribution
 ---
 
+<!-- more -->
+::: tip Inhaltsangabe
+[[toc]]
+:::
 
 ## Entities
 In APProVe and also in Spring Boot, the term "entity" refers to a class that represents a JPA (Java Persistence API) entity.
@@ -28,7 +32,7 @@ public class MyEntity {
 
 ````
 
-### Primärschlüssel
+### Primary keys
 Each JPA entity requires a primary key to uniquely identify each row in the associated database table.
 This is normally achieved by the annotation ``@Id`` above a field.
 
@@ -44,7 +48,7 @@ public class MyEntity {
 }
 ````
 
-### Tabellenname
+### Table names
 The name of the associated database table is specified by the ``@Table`` annotation.
 If this annotation is omitted, the name of the table will correspond to the name of the entity class. In APProVe, an ``@Table`` annotation is always used.
 
@@ -57,7 +61,7 @@ public class MyEntity {
 
 ````
 
-### Felde rund Beziehungen
+### Fields and relations
 The fields of the entity represent the columns of the database table.
 Relationships between entities can be defined by annotations such as ``@OneToMany``, ``@ManyToOne``, etc. to define the relationship between different tables..
 
