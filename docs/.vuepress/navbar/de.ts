@@ -10,6 +10,6 @@ export const de = navbar([
     icon: "note",
     prefix: "/updates/",
     link: "/updates",
-    children: ["3-4-0", "3-3-0", "3-2-0", ""],
+    children: ["3-5-0", "3-4-0", "3-3-0", "3-2-0", ""],
   },
 ]);
