@@ -27,9 +27,9 @@ copyright: false
 toc: false
 ---
 
-Sind alle [Systemvoraussetzungen](https://backend.demo.ibdf-frankfurt.de/manual/install/requirements.html) erfüllt, so kann mit der Installation von APProVe begonnen werden.
+If all [system requirements](requirements.md) are met, you can start installing APProVe.
 
-## Lieferumfang
+## Scope of delivery
 We have developed a set of useful scripts to simplify the deployment of APProVe on a server.
 These scripts facilitate the creation of a .env file and the generation of NGINX configuration files.
 Following that, the install.sh script takes care of the APProVe installation and initiates its operation for you.

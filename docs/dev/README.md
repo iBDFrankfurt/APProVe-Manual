@@ -16,8 +16,9 @@ Durch die Microservice-Architektur wird die Erweiterung von APProVe erleichtert.
 Dieser Guide ist derzeit noch in Arbeit. Wir bitten um Ihr Verständnis.
 
 ## Überblick
-- [Introduction](introduction.md)
-- [Architecture](architecture.md)
+- [Einführung](introduction.md)
+- [Architektur](architecture.md)
+- [Datenbank](database.md)
 - [VueJS-Frontend](vuejs.md)
 
 ## Services

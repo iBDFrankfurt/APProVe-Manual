@@ -87,7 +87,13 @@ export const de = sidebar({
       prefix: "architecture/",
       link: "architecture/",
       collapsible: true,
-      //children: ["features", "approve-ui"],
+    },
+    {
+      icon: "article",
+      text: "Datenbank",
+      prefix: "database/",
+      link: "database/",
+      collapsible: true,
     },
     {
       icon: "article",

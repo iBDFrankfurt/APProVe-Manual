@@ -110,3 +110,16 @@ Die nachfolgende Abbildung zeigt die Kommunikation der einzelnen Services zueina
       <figcaption>Entity-Relationship Diagramm von APProVe</figcaption>
   </div>
 </figure>
+
+
+## Datenbank-Modell
+Die nachfolgende Abbildung zeigt das Datenbankmodell von APProVe. Sie können das Bild auch herunterladen und weiter reinzoomen.
+
+<figure>
+  <div class="container">
+    <label for="Entity">
+       <img :src="$withBase('/img/architecture/database.png')" alt="Entity-Relationship Diagramm von APProVe">
+    </label>
+      <figcaption>Entity-Relationship Diagramm von APProVe</figcaption>
+  </div>
+</figure>
