@@ -7,6 +7,16 @@ category:
   - Update
 ---
 
+# Updates
+Auf dieser Seite werden Ihnen alle Meilensteine angezeigt, die während der Entwicklung von APProVe erreicht wurden. Zudem enthält diese Übersicht alle aktuellen Entwicklungen.
+
+## Meilensteine
+APProVe wird mittels Semantic-Versioning versioniert. Auf Grundlage einer Versionsnummer von MAJOR.MINOR.PATCH werden die einzelnen Elemente folgendermaßen erhöht:
+
+1. MAJOR wird erhöht, wenn API-inkompatible Änderungen oder große Meilensteine veröffentlicht werden, 
+2. MINOR wird erhöht, wenn neue Funktionalitäten, welche kompatibel zur bisherigen API sind, veröffentlicht werden, und
+3. PATCH/Hotfix wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes umfassen.
+
 ## Changelogs
 - [3.5.0](3-5-0.md) <Badge type="primary" text="UPCOMING" vertical="top" />
 

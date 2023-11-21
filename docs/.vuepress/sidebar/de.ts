@@ -75,6 +75,14 @@ export const de = sidebar({
   "/dev/": [
     {
       icon: "article",
+      text: "Einleitung",
+      prefix: "introduction/",
+      link: "introduction/",
+      collapsible: true,
+      //children: ["features", "approve-ui"],
+    },
+    {
+      icon: "article",
       text: "Architektur",
       prefix: "architecture/",
       link: "architecture/",

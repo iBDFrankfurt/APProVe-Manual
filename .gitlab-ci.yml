@@ -1,4 +1,4 @@
-image: docker:19.03
+image: docker:24.0.7
 
 variables:
   REGISTRY_URL: "registry.gitlab.ibdf-frankfurt.de"
@@ -6,7 +6,7 @@ variables:
  #This allows you to access the service image during build time.
 services:
    # docker:dind builds on docker:latest and starts a docker daemon as its entrypoint.
-  - docker:19.03-dind
+  - docker:24.0.7-dind
    
  # Cache downloaded dependencies and plugins between builds.
  # To keep cache across branches add 'key: "$CI_JOB_NAME"'

@@ -36,17 +36,22 @@ projects:
   - icon: shell
     name: Installation
     desc: APProve installieren und einrichten
-    link: https://backend.demo.ibdf-frankfurt.de/manual/install/
+    link: /install/
 
   - icon: read
     name: Benutzerleitfaden
     desc: APProVe benutzen und verwalten
-    link: https://backend.demo.ibdf-frankfurt.de/manual/user/
+    link: /user/
 
   - icon: code
     name: Entwicklerleitfaden
-    desc: APProVe indivudalisieren und erweitern
-    link: https://backend.demo.ibdf-frankfurt.de/manual/dev/
+    desc: APProVe individualisieren und erweitern
+    link: /dev/
+    
+  - icon: code
+    name: Updates
+    desc: Updates von APProVe in einer Übersicht
+    link: /updates/
 
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 ---
