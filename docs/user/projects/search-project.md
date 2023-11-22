@@ -24,4 +24,9 @@ copyright: false
 toc: false
 ---
 
-TODO
+Möchten Sie ein konkretes Projekt suchen und betrachten, so können Sie das über den Menüpunkt ```Projekte >> Projekte suchen``` erreichen.
+Sie werden dann auf die folgende Suchmaske weitergeleitet:
+
+[TODO BILD]
+
+Sie können mithilfe des Suchfeldes eine Volltextsuche über alle Projekte hinweg ausführen.

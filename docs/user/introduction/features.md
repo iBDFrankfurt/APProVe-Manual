@@ -35,4 +35,4 @@ Haben Sie in Echtzeit stets den Zwischenstand Ihres Projektantrages im Blick. Si
 ## Flexibel konfigurierbar
 Als Projektmanager können Sie die Form des Projektantrages flexibel gestalten. So ist es beispielweise möglich, 
 Probenarten und Patientendaten selbst zu definieren und an die Bedingungen Ihrer Forschungsumgebung anzupassen. 
-Auch die Status, die ein Projekt durchläuft, können sie frei konfigurieren.
+Auch die Status, die ein Projekt durchläuft, können sie frei konfigurieren. 

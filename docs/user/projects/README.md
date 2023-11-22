@@ -33,7 +33,7 @@ In diesem Kapitel werden alle zu einem Projekt gehörende Komponenten vorgestell
 <figure>
   <div class="container">
     <label for="Container">
-    <img :src="$withBase('/img/project/project_status.png')" alt="APProVe Projektstatus">
+    <img :src="$withBase('/img/project/project_status.png')" alt="APProVe Projekt">
     </label>
       <figcaption>Ein APPRoVe-Projekt</figcaption>
   </div>
