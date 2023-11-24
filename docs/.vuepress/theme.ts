@@ -3,23 +3,23 @@ import * as navbar from "./navbar";
 import * as sidebar from "./sidebar";
 
 export default hopeTheme({
-  themeColor: {
-    red: "#b3062c",
-    green: "#737c45",
-    orange: "#c96215",
-    grey: "#4f4c48",
-    white: "#e4e3dd",
-  },
+  // themeColor: {
+  //   red: "#b3062c",
+  //   green: "#737c45",
+  //   orange: "#c96215",
+  //   grey: "#4f4c48",
+  //   white: "#e4e3dd",
+  // },
   author: {
     name: "interdisziplinäre Biomaterial- und Datenbank Frankfurt (iBDF)",
     url: "https://www.uct-frankfurt.de/ibdf.html",
   },
-
+  darkmode: "toggle",
   iconAssets: "iconfont",
 
   logo: "/logo.svg",
 
-  repo: "gitlab.proskive.de/proskive/uct-manual-service",
+  repo: "https://gitlab.ibdf-frankfurt.de/proskive/uct-manual-service",
 
   docsDir: "demo/src",
 
@@ -77,7 +77,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      autoExcerpt: true,
+      excerptLength: true,
     },
 
     // If you don't need comment feature, you can remove following option
