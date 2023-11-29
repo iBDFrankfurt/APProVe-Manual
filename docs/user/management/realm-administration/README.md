@@ -1,6 +1,6 @@
 ---
 # This is the title of the article
-title: Verwaltung
+title: Realm-Verwaltung
 # This is the icon of the page
 icon: any
 # This control sidebar order
@@ -27,22 +27,9 @@ toc: false
 article: true
 ---
 
-Eine Schnellübersicht über alles, was Sie als Projektmanager über die Verwaltung von APProVe wissen sollten.
+1. [Realm](realm.md)
+2. [Schwerpunkte](realm-focus.md)
+3. [Dienstleistungen](realm-service.md)
+4. [Probenarten](realm-sample-type.md)
+5. [Patientendatensatzgruppe](realm-patient-data-set-group.md)
 
-<!-- more -->
-
-Sie haben die Möglichkeit APProVe für Ihre Bedürfnisse anzupassen. Dazu zählen:
-1. Verwaltung: 
-   1. Termine und Termintitel
-   2. Material- und Probenarten
-   3. Probencontainer & Maßeinheiten
-   4. Personen & Kliniken
-   5. Status
-   6. Schwerpunkte
-   7. Antragsarten
-   8. Dienstleistungen
-   9. Schlagwörter
-   10. Projektkacheln
-   11. Patienten- & Bioprobendaten
-2. Realm-Verwaltung
-   1. 

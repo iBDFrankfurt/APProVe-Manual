@@ -27,22 +27,19 @@ toc: false
 article: true
 ---
 
-Eine Schnellübersicht über alles, was Sie als Projektmanager über die Verwaltung von APProVe wissen sollten.
 
-<!-- more -->
+1. [Termine und Termintitel](dates.md)
+2. [Material- & Probenarten](material-sample-types.md)
+3. [Probencontainer und Maßeinheiten](container-units.md)
+4. [Bioproben](biosample.md)
+5. [Personen & Kliniken](persons.md)
+6. [Status](status.md)
+7. [Schwerpunkte](mainFocus.md)
+8. [Antragsarten](inquiry.md)
+9. [Dienstleistungen](services.md)
+10. [Schlagwörter](tags.md)
+11. [ToDo](todo.md)
+12. [Publikationen](publication.md)
+13. [Projektkacheln](tiles.md)
+14. [Patienten & Bioprobendaten](patientData.md)
 
-Sie haben die Möglichkeit APProVe für Ihre Bedürfnisse anzupassen. Dazu zählen:
-1. Verwaltung: 
-   1. Termine und Termintitel
-   2. Material- und Probenarten
-   3. Probencontainer & Maßeinheiten
-   4. Personen & Kliniken
-   5. Status
-   6. Schwerpunkte
-   7. Antragsarten
-   8. Dienstleistungen
-   9. Schlagwörter
-   10. Projektkacheln
-   11. Patienten- & Bioprobendaten
-2. Realm-Verwaltung
-   1. 

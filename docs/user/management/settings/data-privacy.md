@@ -1,28 +1,29 @@
 ---
 # This is the title of the article
-title: Grundlagen
+title: Datenschutzerklärung
+# This is the icon of the page
+icon: any
 # This control sidebar order
-order: 3
+order: 1
 # Set author
 author: Timo Schneider
 # Set writing time
-date: 2022-07-20
+date: 2022-07-25
 # A page can have multiple categories
 category:
-- Introduction
+  - Management
 # A page can have multiple tags
 tag:
-- Introduction
+- Management
+- Setting
 # this page is sticky in article list
-sticky: false
+sticky: true
 # this page will appear in starred articles
-star: false
+star: true
 # You can customize footer content
 footer: Entwickelt von der interdisziplinären Biomaterial- und Datenbank Frankfurt (iBDF)
 # You can customize copyright content
 copyright: false
 toc: false
+article: true
 ---
-
-
-TODO

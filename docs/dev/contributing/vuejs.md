@@ -208,7 +208,7 @@ export default {
         </p>
       </div>
     </div>
-    <!--  Falls CSV-Importe gewünscht sind, muss die Komponente csv-import eingebunden werden  -->
+    <!--  Falls CSV-Importe gewünscht sind, muss die Komponente csv-import-export eingebunden werden  -->
     <csv-import
         :item-properties=""
         :table-headers=""
@@ -281,7 +281,7 @@ export default {
 ````vue
 <template>
   ...
-    <!--  Falls CSV-Importe gewünscht sind, muss die Komponente csv-import eingebunden werden  -->
+    <!--  Falls CSV-Importe gewünscht sind, muss die Komponente csv-import-export eingebunden werden  -->
     <csv-import
         :item-properties="itemProperties"  <!-- 1 Variable in data() -->
         :table-headers="csvTableHeaders" <!-- 2 Variable in data() -->
@@ -331,7 +331,7 @@ export default {
       itemProperties: ['title', 'description'], // Die Klasse AppointmentTitle.java aus dem backend kann hier nachgeschaut werden, wir interessieren uns für title und description
       csvTableHeaders: [$t("appointmentTitle.title"), $t("appointmentTitle.descriptionAppointment")], // Übersetzungen der Tabellenspalte, die angezeigt werden sollen
       badgeApi: this.api+"/batch", // Backend url of batch upload (post)
-      componentName: "csv-import-appointment-title" // 7
+      componentName: "csv-import-export-appointment-title" // 7
     }
   },
   mounted() {
@@ -432,7 +432,7 @@ export default {
   data() {
     return {
      ...
-      componentName: "import-appointment-title",
+      componentName: "import-export-appointment-title",
       fields:  [ // 1
         actions,
         fields.getId(false, true),
@@ -615,7 +615,7 @@ export default {
            propertyName: "clinicPersons",
            highlightFilter: ['name', 'description'],
            sortParams: ['name', 'description'],
-           itemNames: [this.$t('realmAdministration.connectedService'), 'Beschreibung'],
+           itemNames: [this.$t('realm-administration.connectedService'), 'Beschreibung'],
            sortDirection: "asc",
            sortProperty: "name"
          }
@@ -1003,7 +1003,7 @@ export default {
         //   propertyName: "clinicPersons",
         //   highlightFilter: ['name', 'description'],
         //   sortParams: ['name', 'description'],
-        //   itemNames: [this.$t('realmAdministration.connectedService'), 'Beschreibung'],
+        //   itemNames: [this.$t('realm-administration.connectedService'), 'Beschreibung'],
         //   sortDirection: "asc",
         //   sortProperty: "name"
         // }

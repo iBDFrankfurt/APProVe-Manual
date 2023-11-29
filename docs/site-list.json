@@ -1,0 +1,162 @@
+{
+  "dev": {
+    "architecture": "/dev/architecture.html",
+    "contributing": {
+      "create-new-entity": "/dev/contributing/create-new-entity.html",
+      "entity": "/dev/contributing/entity.html",
+      "README": "/dev/contributing",
+      "vuejs": "/dev/contributing/vuejs.html"
+    },
+    "database": "/dev/database.html",
+    "introduction": "/dev/introduction.html",
+    "README": "/dev"
+  },
+  "features": {
+    "advanced-search": "/features/advanced-search.html",
+    "dashboard-links": "/features/dashboard-links.html",
+    "dataPrivacy": "/features/dataPrivacy.html",
+    "README": "/features",
+    "reassign": "/features/reassign.html",
+    "tiles": "/features/tiles.html",
+    "todos": "/features/todos.html"
+  },
+  "home": "/home.html",
+  "install": {
+    "install": "/install/install.html",
+    "README": "/install",
+    "requirements": "/install/requirements.html",
+    "setup": "/install/setup.html"
+  },
+  "intro": "/intro.html",
+  "introduction": {
+    "features": "/introduction/features.html",
+    "introduction": "/introduction/introduction.html",
+    "quick-guide": "/introduction/quick-guide.html",
+    "README": "/introduction"
+  },
+  "management": {
+    "administration": {
+      "biosample": "/management/administration/biosample.html",
+      "clinic": "/management/administration/clinic.html",
+      "inquiry": "/management/administration/inquiry.html",
+      "mainFocus": "/management/administration/mainFocus.html",
+      "patientData": "/management/administration/patientData.html",
+      "persons": "/management/administration/persons.html",
+      "README": "/management/administration",
+      "realm": "/management/administration/realm.html",
+      "services": "/management/administration/services.html",
+      "status": "/management/administration/status.html",
+      "tiles": "/management/administration/tiles.html"
+    },
+    "README": "/management"
+  },
+  "navigation": {
+    "create-project": "/navigation/create-project.html",
+    "dashboard": "/navigation/dashboard.html",
+    "edit-project": "/navigation/edit-project.html",
+    "lists": "/navigation/lists.html",
+    "login": "/navigation/login.html",
+    "README": "/navigation",
+    "registration": "/navigation/registration.html",
+    "view-project": "/navigation/view-project.html"
+  },
+  "README": "",
+  "slide": "/slide.html",
+  "updates": {
+    "2-5-0": "/updates/2-5-0.html",
+    "2-5-1": "/updates/2-5-1.html",
+    "2-5-2": "/updates/2-5-2.html",
+    "2-5-3": "/updates/2-5-3.html",
+    "2-6-0": "/updates/2-6-0.html",
+    "2-6-1": "/updates/2-6-1.html",
+    "2-6-2": "/updates/2-6-2.html",
+    "2-6-3": "/updates/2-6-3.html",
+    "2-6-4": "/updates/2-6-4.html",
+    "2-6-5": "/updates/2-6-5.html",
+    "3-0-0": "/updates/3-0-0.html",
+    "3-0-1": "/updates/3-0-1.html",
+    "3-0-2": "/updates/3-0-2.html",
+    "3-1-0": "/updates/3-1-0.html",
+    "3-2-0": "/updates/3-2-0.html",
+    "3-3-0": "/updates/3-3-0.html",
+    "3-4-0": "/updates/3-4-0.html",
+    "3-5-0": "/updates/3-5-0.html",
+    "README": "/updates"
+  },
+  "user": {
+    "advanced-search": "/user/advanced-search.html",
+    "dashboard-links": "/user/dashboard-links.html",
+    "dataPrivacy": "/user/dataPrivacy.html",
+    "introduction": {
+      "approve-ui": "/user/introduction/approve-ui.html",
+      "features": "/user/introduction/features.html",
+      "README": "/user/introduction"
+    },
+    "management": {
+      "administration": {
+        "biosample": "/user/management/administration/biosample.html",
+        "clinic": "/user/management/administration/clinic.html",
+        "container-units": "/user/management/administration/container-units.html",
+        "dates": "/user/management/administration/dates.html",
+        "inquiry": "/user/management/administration/inquiry.html",
+        "mainFocus": "/user/management/administration/mainFocus.html",
+        "material-sample-types": "/user/management/administration/material-sample-types.html",
+        "patientData": "/user/management/administration/patientData.html",
+        "persons": "/user/management/administration/persons.html",
+        "publication": "/user/management/administration/publication.html",
+        "README": "/user/management/administration",
+        "realm": "/user/management/administration/realm.html",
+        "services": "/user/management/administration/services.html",
+        "status": "/user/management/administration/status.html",
+        "tags": "/user/management/administration/tags.html",
+        "tiles": "/user/management/administration/tiles.html",
+        "todo": "/user/management/administration/todo.html"
+      },
+      "import-export": {
+        "project-import": "/user/management/import-export/project-import.html",
+        "README": "/user/management/import-export",
+        "user": "/user/management/import-export/user.html",
+        "wekan": "/user/management/import-export/wekan.html"
+      },
+      "README": "/user/management",
+      "realm-administration": {
+        "README": "/user/management/realm-administration",
+        "realm-focus": "/user/management/realm-administration/realm-focus.html",
+        "realm-patient-data-set-group": "/user/management/realm-administration/realm-patient-data-set-group.html",
+        "realm-sample-type": "/user/management/realm-administration/realm-sample-type.html",
+        "realm-service": "/user/management/realm-administration/realm-service.html",
+        "realm": "/user/management/realm-administration/realm.html"
+      },
+      "roles": {
+        "README": "/user/management/roles",
+        "roles": "/user/management/roles/roles.html"
+      },
+      "settings": {
+        "dashboard-links": "/user/management/settings/dashboard-links.html",
+        "data-privacy": "/user/management/settings/data-privacy.html",
+        "help": "/user/management/settings/help.html",
+        "imprint": "/user/management/settings/imprint.html",
+        "language": "/user/management/settings/language.html",
+        "notifications": "/user/management/settings/notifications.html",
+        "number-leads-references": "/user/management/settings/number-leads-references.html",
+        "README": "/user/management/settings",
+        "rules": "/user/management/settings/rules.html",
+        "service": "/user/management/settings/service.html",
+        "terms-of-use": "/user/management/settings/terms-of-use.html"
+      }
+    },
+    "projects": {
+      "basics": "/user/projects/basics.html",
+      "create-project": "/user/projects/create-project.html",
+      "data-privacy": "/user/projects/data-privacy.html",
+      "edit-project": "/user/projects/edit-project.html",
+      "project-workflow": "/user/projects/project-workflow.html",
+      "README": "/user/projects",
+      "search-project": "/user/projects/search-project.html"
+    },
+    "README": "/user",
+    "reassign": "/user/reassign.html",
+    "tiles": "/user/tiles.html",
+    "todos": "/user/todos.html"
+  }
+}

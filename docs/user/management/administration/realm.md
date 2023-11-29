@@ -161,7 +161,7 @@ Klicken Sie auf den ``Realm-Schwerpunkt hinzufügen`` Button, um einen neuen Rea
 
 ::: danger Bitte beachten
 Bevor Sie einen Realm-Schwerpunkt erstellen können, muss der zu verknüpfende Schwerpunkt bereits erstellt worden sein!
-Klicken Sie [hier](../management/mainFocus.md), um entsprechende weitergelitet zu werden.
+Klicken Sie [hier](mainFocus.md), um entsprechende weitergelitet zu werden.
 :::
 
 ### Felder
@@ -191,7 +191,7 @@ Klicken Sie auf den ``Realm-Dienstleistungen hinzufügen`` Button, um eine neue 
 
 ::: danger Bitte beachten
 Bevor Sie eine Realm-Dienstleistung erstellen können, muss die zu verknüpfende Dienstleistung bereits erstellt worden sein!
-Klicken Sie [hier](../management/services.md), um entsprechende weitergeleitet zu werden.
+Klicken Sie [hier](services.md), um entsprechende weitergeleitet zu werden.
 :::
 
 ### Felder
@@ -248,7 +248,7 @@ Klicken Sie auf den ``Realm-Patientendatensatzgruppen hinzufügen`` Button, um e
 
 ::: danger Bitte beachten
 Bevor Sie eine Realm-Patientendatensatzgrupp erstellen können, muss die zu verknüpfende Patientendatensatzgruppe bereits erstellt worden sein!
-Klicken Sie [hier](../management/patientData.md), um entsprechende weitergeleitet zu werden.
+Klicken Sie [hier](patientData.md), um entsprechende weitergeleitet zu werden.
 :::
 
 ### Felder

@@ -26,3 +26,7 @@ For example the folder ``docs/updates/README.md`` has all files in this folder l
 
 ## Adding new images
 Place your images inside the folder ``docs/.vuepress/public/img/``.
+
+## Generating Site-Overview for VueJS
+Just run the javascript file ``get-all-pages.js`` from the base folder. This will generate a ``site-list.json`` which can be exported to the vuejs-frontend. 
+You should run it everytime you change the layout or add new sites that should be used in the vuejs-frontend.

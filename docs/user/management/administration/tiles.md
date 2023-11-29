@@ -154,7 +154,7 @@ Der Nutzer könnte über einen direkten Link zum Projekt bereits darauf zugreife
 
 
 ## Projektkachel erstellen
-Das Erstellen einer Projektkachel wird in diesem [Abschnitt](../management/tiles.md) genauer erläutert. In diesem Fall wird explizit eine Kachel erstellt, die einer Nutzergruppe und einem Status zugefügt wird.
+Das Erstellen einer Projektkachel wird in diesem [Abschnitt](tiles.md) genauer erläutert. In diesem Fall wird explizit eine Kachel erstellt, die einer Nutzergruppe und einem Status zugefügt wird.
 
 <br/>
 <br/>

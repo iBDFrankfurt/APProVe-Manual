@@ -47,28 +47,52 @@ export const de = sidebar({
     },
     {
       icon: "article",
-      text: "Realms und Rollen",
-      prefix: "realms-roles/",
-      link: "realms-roles/",
-      collapsible: true,
-      children: ["basics", "realm-management"],
-    },
-    {
-      icon: "article",
       text: "Verwaltung",
       prefix: "management/",
       link: "management/",
       collapsible: true,
-      children: ["dates", "material-sample-types", "container-units", "biosample", "status", "persons", "clinic", "mainFocus", "inquiry", "services", "tags", "tiles", "todo", "publication", "patientData"]
-    },
-    {
-      icon: "article",
-      text: "Einstellungen",
-      prefix: "settings/",
-      link: "settings/",
-      collapsible: true,
-      children: ["overview"],
-
+      children: [
+        {
+          icon: "article",
+          text: "Administration",
+          prefix: "administration/",
+          link: "administration/",
+          collapsible: true,
+          children: ["dates", "material-sample-types", "container-units", "biosample", "status", "persons", "clinic", "mainFocus", "inquiry", "services", "tags", "tiles", "todo", "publication", "patientData"]
+        },
+        {
+          icon: "article",
+          text: "Realm-Administration",
+          prefix: "realm-administration/",
+          link: "realm-administration/",
+          collapsible: true,
+          children: ["realm", "realm-focus", "realm-service", "realm-sample-type", "realm-patient-data-set-group"]
+        },
+        {
+          icon: "article",
+          text: "Einstellungen",
+          prefix: "settings/",
+          link: "settings/",
+          collapsible: true,
+          children: ["language", "number-leads-references", "notifications", "data-privacy", "imprint", "terms-of-use", "help", "rules", "service", "dashboard-links"]
+        },
+        {
+          icon: "article",
+          text: "Import und Export",
+          prefix: "import-export/",
+          link: "import-export/",
+          collapsible: true,
+          children: ["wekan", "user", "project-import"]
+        },
+        {
+          icon: "article",
+          text: "Rollen",
+          prefix: "roles/",
+          link: "roles/",
+          collapsible: true,
+          children: ["roles"]
+        }
+      ]
     },
   ],
 

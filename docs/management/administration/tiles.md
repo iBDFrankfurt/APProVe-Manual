@@ -25,7 +25,7 @@ toc: false
 ---
 
 # Kachelverwaltung
-APProVe bietet Ihnen die Möglichkeit Projekte in Projektkacheln zu gruppieren. Wie Sie eine Projektkachel erstellen und bearbeiten finden sie [hier](../features/tiles.md).
+APProVe bietet Ihnen die Möglichkeit Projekte in Projektkacheln zu gruppieren. Wie Sie eine Projektkachel erstellen und bearbeiten finden sie [hier](../../features/tiles.md).
 
 Dieser Abschnitt befasst sich damit, wie Sie eine Projektkachel einem anderen Nutzer zur Verfügung stellen können, damit sich dieser die Projekte darin anschauen kann.
 Anhand eines Beispiels wird diese Herangehensweise genauer erläutert.
@@ -154,7 +154,7 @@ Der Nutzer könnte über einen direkten Link zum Projekt bereits darauf zugreife
 
 
 ## Projektkachel erstellen
-Das Erstellen einer Projektkachel wird in diesem [Abschnitt](../management/tiles.md) genauer erläutert. In diesem Fall wird explizit eine Kachel erstellt, die einer Nutzergruppe und einem Status zugefügt wird.
+Das Erstellen einer Projektkachel wird in diesem [Abschnitt](tiles.md) genauer erläutert. In diesem Fall wird explizit eine Kachel erstellt, die einer Nutzergruppe und einem Status zugefügt wird.
 
 <br/>
 <br/>
