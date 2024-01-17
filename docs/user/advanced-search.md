@@ -53,6 +53,7 @@ Ein Projekt besteht aus verschiedenen Attributen, nach einigen können ab Versio
 - needsBasicData: Wurden Basisdaten angefragt
 - needsExternalData: Werden externe Daten benötigt
 - hasPublication: Hat das Projekt Publikationen
+- hasService: Hat das Projekt Dienstleistungen
 
 
 ## Beispielabfragen für Projekte
