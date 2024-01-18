@@ -47,6 +47,14 @@ export const de = sidebar({
     },
     {
       icon: "article",
+      text: "Features",
+      prefix: "features/",
+      link: "features/",
+      collapsible: true,
+      children: ["todos", "reassign", "tiles", "dashboard-links", "dataPrivacy", "advanced-search"]
+    },
+    {
+      icon: "article",
       text: "Verwaltung",
       prefix: "management/",
       link: "management/",

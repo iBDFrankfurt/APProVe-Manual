@@ -81,12 +81,21 @@
     "3-3-0": "/updates/3-3-0.html",
     "3-4-0": "/updates/3-4-0.html",
     "3-5-0": "/updates/3-5-0.html",
+    "3-6-0": "/updates/3-6-0.html",
     "README": "/updates"
   },
   "user": {
-    "advanced-search": "/user/advanced-search.html",
     "dashboard-links": "/user/dashboard-links.html",
     "dataPrivacy": "/user/dataPrivacy.html",
+    "features": {
+      "advanced-search": "/user/features/advanced-search.html",
+      "dashboard-links": "/user/features/dashboard-links.html",
+      "dataPrivacy": "/user/features/dataPrivacy.html",
+      "README": "/user/features",
+      "reassign": "/user/features/reassign.html",
+      "tiles": "/user/features/tiles.html",
+      "todos": "/user/features/todos.html"
+    },
     "introduction": {
       "approve-ui": "/user/introduction/approve-ui.html",
       "features": "/user/introduction/features.html",
