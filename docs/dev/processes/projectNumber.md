@@ -39,6 +39,14 @@ In diesem Artikel geht es um eine Erläuterung der Erstellung der Projektnummern
 ## Projektnummer
 Die Projektnummer identifiziert eindeutig ein Projekt. Sie ist abhängig vom aktuellen Jahr und der Anzahl an Projekten pro Jahr in einem Schwerpunkt.
 
+````java 
+@Query(value = "SELECT count(p) FROM Project p " +
+            "WHERE " +
+            "p.shortcut = :shortcut AND " +
+            "p.projectNumber LIKE CONCAT('%',:year) ")
+    Long countByShortcutAndYear(@Param("shortcut") String shortcut, @Param("year") int year);
+````
+
 ::: warning Beispiel
 Im Jahr 2024 wird das erste Projekt im Schwerpunkt ``SDO`` eingereicht, was zur Berechnung der Projektnummer ``SDO-1-2024`` führt. 
 Wenn daraufhin ein weiteres Projekt eingereicht wird, erhält es die Projektnummer ``SDO-2-2024``.
@@ -47,6 +55,14 @@ Wenn daraufhin ein weiteres Projekt eingereicht wird, erhält es die Projektnumm
 ## Realm-Projektnummer
 Zusätzlich zur Projektnummer wird auch eine Realm-Projektnummer geführt. Diese zählt, ebenso wie die Projektnummer, eine Nummer hoch. 
 Diese ist jedoch abhängig vom ``Kürzel des Realms`` in dem das Projekt eingereicht wurde.
+
+````java 
+@Query(value = "SELECT count(p) FROM Project p " +
+        "WHERE " +
+        "p.shortcut = :shortcut AND " +
+        "p.projectNumber LIKE CONCAT('%',:year) ")
+    Long countByShortcutAndYearForProjectNumber(@Param("shortcut") String shortcut, @Param("year") int year);
+````
 
 ::: warning Beispiel
 Im Jahr 2024 wird das erste Projekt im Schwerpunkt SDO im Realm ``UCT`` eingereicht. Gemäß der Realm-Zuordnung erhält das Projekt die Projektnummer 'SDO-1-2024', 
