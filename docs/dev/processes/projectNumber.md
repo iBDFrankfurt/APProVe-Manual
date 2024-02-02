@@ -58,10 +58,11 @@ Diese ist jedoch abhängig vom ``Kürzel des Realms`` in dem das Projekt eingere
 
 ````java 
 @Query(value = "SELECT count(p) FROM Project p " +
+        "join p.realm r " +
         "WHERE " +
-        "p.shortcut = :shortcut AND " +
-        "p.projectNumber LIKE CONCAT('%',:year) ")
-    Long countByShortcutAndYearForProjectNumber(@Param("shortcut") String shortcut, @Param("year") int year);
+        "r.shortcut = :shortcut AND " +
+        "p.realmProjectNumber LIKE CONCAT('%',:year) ")
+    Long countByShortcutAndYear(@Param("shortcut") String shortcut, @Param("year") int year);
 ````
 
 ::: warning Beispiel
@@ -147,10 +148,11 @@ Für die Realm-Projektnummer erfolgt die Berechnung ähnlich, allerdings wird hi
 
 ````java
 @Query(value = "SELECT count(p) FROM Project p " +
+        "join p.realm r " +
         "WHERE " +
-        "p.shortcut = :shortcut AND " +
-        "p.projectNumber LIKE CONCAT('%',:year) ")
-    Long countByShortcutAndYearForProjectNumber(@Param("shortcut") String shortcut, @Param("year") int year);
+        "r.shortcut = :shortcut AND " +
+        "p.realmProjectNumber LIKE CONCAT('%',:year) ")
+    Long countByShortcutAndYear(@Param("shortcut") String shortcut, @Param("year") int year);
 ````
 
 
