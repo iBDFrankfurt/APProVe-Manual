@@ -18,9 +18,11 @@ APProVe wird mittels Semantic-Versioning versioniert. Auf Grundlage einer Versio
 3. PATCH/Hotfix wird erhöht, wenn die Änderungen ausschließlich API-kompatible Bugfixes umfassen.
 
 ## Changelogs
-- [3.5.0](3-5-0.md) <Badge type="primary" text="UPCOMING" vertical="top" />
+- [3.6.0](3-6-0.md) <Badge type="primary" text="UPCOMING" vertical="top" />
 
-- [3.4.0](3-4-0.md) <Badge type="danger" text="NEW" vertical="top" />
+- [3.5.0](3-5-0.md) <Badge type="danger" text="NEW" vertical="top" />
+
+- [3.4.0](3-4-0.md) 
 
 - [3.3.0](3-3-0.md)  
 
