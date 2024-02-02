@@ -128,6 +128,14 @@ export const de = sidebar({
     },
     {
       icon: "article",
+      text: "Funktionsweise und Prozesse",
+      prefix: "processes/",
+      link: "processes/",
+      collapsible: true,
+      children: ["projectNumber"],
+    },
+    {
+      icon: "article",
       text: "Beteiligung",
       prefix: "contributing/",
       link: "contributing/",
