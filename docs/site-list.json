@@ -9,16 +9,11 @@
     },
     "database": "/dev/database.html",
     "introduction": "/dev/introduction.html",
+    "processes": {
+      "projectNumber": "/dev/processes/projectNumber.html",
+      "README": "/dev/processes"
+    },
     "README": "/dev"
-  },
-  "features": {
-    "advanced-search": "/features/advanced-search.html",
-    "dashboard-links": "/features/dashboard-links.html",
-    "dataPrivacy": "/features/dataPrivacy.html",
-    "README": "/features",
-    "reassign": "/features/reassign.html",
-    "tiles": "/features/tiles.html",
-    "todos": "/features/todos.html"
   },
   "home": "/home.html",
   "install": {
@@ -83,6 +78,8 @@
     "3-5-0": "/updates/3-5-0.html",
     "3-6-0": "/updates/3-6-0.html",
     "3-6-1": "/updates/3-6-1.html",
+    "3-6-2": "/updates/3-6-2.html",
+    "3-7-0": "/updates/3-7-0.html",
     "README": "/updates"
   },
   "user": {
@@ -90,6 +87,7 @@
     "dataPrivacy": "/user/dataPrivacy.html",
     "features": {
       "advanced-search": "/user/features/advanced-search.html",
+      "api-key": "/user/features/api-key.html",
       "dashboard-links": "/user/features/dashboard-links.html",
       "dataPrivacy": "/user/features/dataPrivacy.html",
       "README": "/user/features",

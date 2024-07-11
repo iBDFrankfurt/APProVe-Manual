@@ -91,4 +91,5 @@ Eine Person besteht aus verschiedenen Attributen, nach einigen können ab Versio
 ## Beispielabfragen für Personen
 Sie können Abfragen mit einem ``AND`` miteinander verknüpfen.
 
-- ``isLeader AND !isParticipant`` : Alle Personen, die ein Projekt leiten und nicht an irgendeinem Projekt beteiligt sind
+- ``isLeader AND !isParticipant`` : Alle Personen, die ein Projekt leiten und nicht an irgendeinem Projekt beteiligt sind.
+- ``!hasAnyProject`` : Alle Personen, die keinem Projekt in irgendeiner Form zugewiesen sind.

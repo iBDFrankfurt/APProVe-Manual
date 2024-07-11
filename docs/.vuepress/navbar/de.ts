@@ -11,6 +11,6 @@ export const de = navbar([
         prefix: "/updates/",
         link: "/updates",
         target: '_self',
-        children: ["", "3-6-1", "3-6-0", "3-5-0", "3-4-0"],
+        children: ["", "3-8-0", "3-7-0", "3-6-2", "3-6-1"],
     },
 ]);

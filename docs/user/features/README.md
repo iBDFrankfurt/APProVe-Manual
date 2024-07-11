@@ -19,3 +19,4 @@ Check the Features of APProVe!
 - [Dashboard-Links](dashboard-links.md)
 - [Datenschutzkonzepte](dataPrivacy.md)
 - [Erweiterte Suche](advanced-search.md)
+- [Api Key](api-key.md)

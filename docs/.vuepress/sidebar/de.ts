@@ -51,7 +51,7 @@ export const de = sidebar({
       prefix: "features/",
       link: "features/",
       collapsible: true,
-      children: ["todos", "reassign", "tiles", "dashboard-links", "dataPrivacy", "advanced-search"]
+      children: ["todos", "reassign", "tiles", "dashboard-links", "dataPrivacy", "advanced-search", "api-key"]
     },
     {
       icon: "article",
@@ -153,6 +153,9 @@ export const de = sidebar({
       collapsible: true,
       children:
           [
+            "3-8-0",
+            "3-7-0",
+            "3-6-2",
             "3-6-1",
             "3-6-0",
             "3-5-0",
