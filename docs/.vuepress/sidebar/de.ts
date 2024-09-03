@@ -153,6 +153,7 @@ export const de = sidebar({
       collapsible: true,
       children:
           [
+            "3-9-0",
             "3-8-0",
             "3-7-0",
             "3-6-2",
